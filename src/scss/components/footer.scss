@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .icon {
+    background: no-repeat center;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    margin: 5px;
+    fill: #b4762d;
+  }
+  
+  .facebook-icon {
+    background-image: url('../images/facebook-logo.svg');
+  }
+
+  .twitter-icon {
+    background-image: url('../images/twitter-logo.svg');
+  }
+
+  .linked-in-icon {
+    background-image: url('../images/linkedin-logo.svg');
+  }
+
+}

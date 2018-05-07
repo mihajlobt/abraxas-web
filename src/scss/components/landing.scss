@@ -1,0 +1,22 @@
+.landing-main {
+  position: relative;
+  height: 120vh;
+
+  .landing-background {
+    background-size: cover;
+    background: url('../images/landing-splash.png') no-repeat center;
+    height: 100%;
+  }
+
+  .landing-text {
+    position: absolute;
+    max-width: 800px;
+    color: #f8f8f8;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10%;
+  }
+
+
+
+}

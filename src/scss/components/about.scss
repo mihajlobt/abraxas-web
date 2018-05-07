@@ -1,0 +1,73 @@
+.about-section {
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .our-team {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-main-text {
+    padding: 40px;
+  }
+
+  .member {
+    padding: 40px;
+    border: 1px solid #cecece;
+    margin: 10px;
+    flex: 1;
+
+  }
+
+
+  .member-info {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .member-text {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .member-about {
+    padding: 10px;
+  }
+
+  .member-image {
+    min-width: 120px;
+    height: 150px;
+    background: no-repeat center;
+    background-size: contain;
+    margin-right: 20px
+  }
+
+  .justin {
+    background-image: url("../images/justin-G.png");
+  }
+  .josh {
+    background-image: url("../images/Lawton-Belous.png");
+  }
+  .steve {
+    background-image: url("../images/Steve-Meyer.png");
+  }
+  .irene {
+    background-image: url("../images/Irene.png");
+  }
+  .bradley {
+    background-image: url("../images/Bradley.png");
+  }
+  .aaron {
+    background-image: url("../images/Aaron.png");
+  }
+}

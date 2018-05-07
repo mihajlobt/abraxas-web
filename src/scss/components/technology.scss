@@ -1,0 +1,169 @@
+.technology {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f8f8f8;
+  background-color: black;
+  
+  h2 {
+    font-size: 25px;
+  }
+  
+  .technology-illustration {
+    background: url("../images/ABRAXAS-Infographic.png") no-repeat center;
+    height: 85vh;
+    width: 100%;
+    background-size: contain;
+  }
+
+  .technology-scout {
+    background-color: white;
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .technology-scout-text {
+      padding: 40px;
+      max-width: 900px;
+    }
+
+    h2 {
+      color: rgb(120,18,21);
+    }
+
+    .abraxas-hq {
+      color: rgb(180,118,45);
+    }
+  }
+
+  .technology-roi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 40px 0;
+    background-color: #b4752d;
+    color: black;
+    font-size: 1.25em;
+    width: 100%;
+
+    h1 {
+      max-width: 600px;
+    }
+
+
+    button {
+      cursor: pointer;
+      margin: 1.22em;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: lighter;
+      text-transform: capitalize;
+      background-color: rgb(120,18,21);
+      color: #f8f8f8;
+      border: 0;
+      border-bottom: 3px solid;
+      border-radius: 0.35em;
+      border-color: rgb(65, 11, 13);
+
+      &:hover {
+        background-color: rgb(168, 21, 25);
+      }
+    }
+  }
+
+  .technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .technology-points {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-weight: lighter;
+    }
+
+    h2 {
+      font-weight: lighter;
+      margin: 0;
+      padding: 0 20px 20px;
+    }
+  }
+
+  .checked-icon {
+    background: url("../images/checked.svg") no-repeat center;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    fill: white;
+    color: white;
+    padding: 10px;
+  }
+
+  .checked-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+
+    h2 {
+      max-width: 400px;
+    }
+
+    span {
+      padding: 10px;
+    }
+  }
+  
+  .technology-text {
+    color: rgb(180,118,45);
+    padding: 30px;
+    font-weight: lighter;
+    text-align: center;
+    max-width: 700px;
+  }
+
+  .technology-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .image-circle {
+      width: 150px;
+      height: 150px;
+
+      background: no-repeat center;
+      background-size: contain;
+
+      &.customer-focus {
+        background-image: url("../images/Abraxas-technology-values_0001_Service-Oriented.png");
+      }
+      &.data-driven {
+        background-image: url("../images/Abraxas-technology-values_0006_Data-Driven.png");
+      }
+      &.real-time {
+        background-image: url("../images/Abraxas-technology-values_0003_Real-Time-Metrics.png");
+      }
+      &.service-oriented {
+        background-image: url("../images/Abraxas-technology-values_Customer-Focused.png");
+      }
+      &.technology-forward {
+        background-image: url("../images/Abraxas-technology-values_Technology-Forward.png");
+      }
+    }
+  }
+}
