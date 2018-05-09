@@ -1,7 +1,8 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const outputPath = path.join(__dirname, "dist")
+const outputPath = path.join(__dirname, "dist");
 const port = process.env.PORT || 3000;
 
 module.exports = {
@@ -71,4 +72,4 @@ module.exports = {
         historyApiFallback: true,
         publicPath: '/dist/',
     }
-}
+};

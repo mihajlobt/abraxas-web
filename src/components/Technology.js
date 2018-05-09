@@ -4,7 +4,7 @@ class Technology extends React.Component {
 
     render() {
         return (
-            <div className="technology">
+            <div className="technology-main">
                 <h1 className="technology-text">
                     ABRAXAS Technology creates value for advertising stakeholders
                     by providing real-time visibility, engagement and customer behavior metrics.

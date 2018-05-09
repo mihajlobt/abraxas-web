@@ -1,13 +1,9 @@
 {
   "presets": [
-    ["env", { 
-      "targets": {
-        "browsers": "last 2 versions"
-      },
-      "loose": true,
+    ["env", {
       "modules": false
     }],
     "react",
-    "react-hmre"
+    "stage-2"
   ]
 }

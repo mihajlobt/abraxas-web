@@ -12,7 +12,4 @@ module.exports = merge(webpackCommonConfig, {
         new webpack.EnvironmentPlugin({NODE_ENV: 'development'}),
     ],
     devtool: "source-map",
-    devServer: {
-    }
-
 });

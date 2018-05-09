@@ -12,7 +12,7 @@ class About extends React.Component {
                     </span>
                 </div>
                 <div className="our-team">
-                    <div className="flex">
+                    <div className="about-us-grid">
                         <div className="member">
                             <div className="member-info">
                                 <div className="member-image justin"></div>
@@ -52,8 +52,6 @@ class About extends React.Component {
                                 Steve has more than 30 years of experience developing emerging technologies, has founded multiple startups, and is a legendary mentor in Techstars. An uncommon combination of hands on business, marketing, and technical expertise acquired over three decades of experience founding and bootstrapping technology startups to success. Sole Founder or Co-Founder of multiple startups which reached prominent market leadership positions before exiting. Assembled and led incredible teams which achieved exceptional goals using lean and agile methods before they were common. Created global product distribution networks by identifying new market opportunities and recruiting VARs across the U.S. and on 4 continents.
                             </div>
                         </div>
-                    </div>
-                    <div className="flex">
                         <div className="member">
                             <div className="member-info">
                                 <div className="member-image irene"></div>

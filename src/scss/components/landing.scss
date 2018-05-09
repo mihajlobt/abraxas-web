@@ -1,6 +1,6 @@
 .landing-main {
   position: relative;
-  height: 120vh;
+  height: 100vh;
 
   .landing-background {
     background-size: cover;
@@ -9,8 +9,10 @@
   }
 
   .landing-text {
+    text-shadow: 0 2px #000;
+    top: 60px;
     position: absolute;
-    max-width: 800px;
+    max-width: 650px;
     color: #f8f8f8;
     font-size: 40px;
     font-weight: bold;
