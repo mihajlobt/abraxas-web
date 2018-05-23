@@ -8,6 +8,7 @@ import Login from './components/Login';
 import Blog from './components/Blog';
 
 import {BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import TermsAndConditions from "./components/TermsAndConditions";
 
 const renderApplication = () => {
   ReactDOM.render(
@@ -18,6 +19,7 @@ const renderApplication = () => {
                   <Route exact path="/" component={Home}></Route>
                   <Route path="/blog" component={Blog}></Route>
                   <Route path="/login" component={Login}></Route>
+                  <Route path="/terms" component={TermsAndConditions}></Route>
               </div>
           </div>
       </Router> ,

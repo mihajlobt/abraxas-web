@@ -7,6 +7,8 @@ class Header extends React.Component {
         this.state = {
             isSmallDisplay: null,
             menu: false,
+            menuUnderline: null,
+            componentIntoView: null,
             items: [
                 "home",
                 "technology",

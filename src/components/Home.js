@@ -15,21 +15,6 @@ import Blog from './Blog';
 class Home extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            views: [
-                "home",
-                "technology",
-                "pricing",
-                "about",
-                "contact",
-                "blog",
-                "login",
-            ],
-            menuUnderline: null,
-            startingScrollPosition: null,
-            componentIntoView: null,
-
-        }
     }
 
   /*  scrollToComponent = view => {
