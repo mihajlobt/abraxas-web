@@ -8,6 +8,7 @@ import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';
 import underscore from 'underscore';
+import Blog from './Blog';
 import VisibilitySensor from 'react-visibility-sensor';
 
 
@@ -108,6 +109,7 @@ class Home extends React.Component {
                 <About ref="about"/>
                 <Contact ref="contact"/>
                 <Footer/>
+                <Blog/>
             </div>
         )
     }
