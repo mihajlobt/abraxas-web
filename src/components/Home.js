@@ -9,7 +9,6 @@ import Contact from './Contact';
 import Footer from './Footer';
 import underscore from 'underscore';
 import Blog from './Blog';
-import VisibilitySensor from 'react-visibility-sensor';
 
 
 
@@ -33,7 +32,7 @@ class Home extends React.Component {
         }
     }
 
-    scrollToComponent = view => {
+  /*  scrollToComponent = view => {
         let component = this.refs[view];
         let componentDOM = ReactDOM.findDOMNode(component);
         this.state.componentIntoView = view;
@@ -52,10 +51,7 @@ class Home extends React.Component {
     };
 
     componentDidMount = () => {
-
         window.addEventListener("scroll", this.detectScroll, false);
-        //this.setState(this.state);
-
     };
 
     detectElement = (el) => {
@@ -94,22 +90,19 @@ class Home extends React.Component {
             }
         }
     }, 50);
-
+*/
     render() {
         return (
-            <div className="homepage">
-                <button className="scroll-btn" onClick={this.scrollToComponent.bind(this, "home")}>
+            <div className="homepage" id="home">
+                {/*<button className="scroll-btn" onClick={this.scrollToComponent.bind(this, "home")}>
                     <div className="scroll-to-top"> </div>
-                </button>
-                <Header componentIntoView={this.state.componentIntoView} scrollToComponent={this.scrollToComponent}
-                        components={this.state.views}/>
+                </button>*/}
                 <Landing ref="home"/>
                 <Technology ref="technology"/>
                 <Pricing ref="pricing"/>
                 <About ref="about"/>
                 <Contact ref="contact"/>
                 <Footer/>
-                <Blog/>
             </div>
         )
     }

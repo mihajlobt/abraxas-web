@@ -4,7 +4,7 @@ class About extends React.Component {
 
     render() {
         return (
-            <div className="about-section">
+            <div className="about-section" id="about">
                 <div className="about-main-text">
                     <h1>About ABRAXAS Technology</h1>
                     <span>ABRAXAS Technology was founded in Austin, Texas, in 2017. After helping build the largest network of digital billboards in Austin at Ads For The Road, Justin Gilfus recognized a need for better analytics within outdoor advertising. We believe digital billboard customers deserve the same engagement and ROI metrics available for online advertisements, and now ABRAXAS Technology can provide them. Our leadership team is committed to bringing

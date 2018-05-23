@@ -6,7 +6,16 @@ class Header extends React.Component {
         super(props);
         this.state = {
             isSmallDisplay: null,
-            menu: false
+            menu: false,
+            items: [
+                "home",
+                "technology",
+                "pricing",
+                "about",
+                "contact",
+                "blog",
+                "login",
+            ],
         }
     }
 
@@ -31,16 +40,41 @@ class Header extends React.Component {
 
     };
 
+    scrollToComponent = e => {
+        const view = e.target.value;
+        let componentDOM = document.getElementById(view);
+        this.state.componentIntoView = view;
+        if (view && componentDOM) {
+            e.preventDefault();
+            window.scroll({
+                top: componentDOM.offsetTop - 80,
+                behavior: 'smooth'
+            });
+            this.props.history.push("/#" + view);
+            this.setState(this.state);
+
+        } else {
+            return false
+        }
+    };
 
     render() {
-        let menuItems = this.props.components.map((item, index) => {
+        let menuItems = this.state.items.map((item, index) => {
             let className = this.isSmallDisplay() ? item + " menu-item small" : item + " menu-item";
-            return (
-                <div onClick={this.props.scrollToComponent.bind(this, item, index)} className={className}
-                     key={index}>
-                    <button className={this.props.componentIntoView === item ? "selected-component" : ""}>{item}</button>
-                </div>
-            )
+            if (item === "blog" || item === "login") {
+                return (
+                    <a href={'/' + item} onClick={this.scrollToComponent} key={index} className={className} >
+                        <button value={item}>{item}</button>
+                    </a>
+                )
+            } else {
+                return (
+                    <a href={'/#' + item} onClick={this.scrollToComponent} className={className}
+                       key={index}>
+                        <button value={item}>{item}</button>
+                    </a>
+                )
+            }
         });
 
         let burgerMenu = (<div onClick={this.handleMenu} className={!this.state.menu ? "nav-icon1 main-menu-burger closed" : "nav-icon1 open main-menu-burger opened"}>

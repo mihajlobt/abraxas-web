@@ -4,7 +4,7 @@ class Pricing extends React.Component {
 
     render() {
         return (
-            <div className="pricing-packages">
+            <div className="pricing-packages"  id="pricing">
                 <h1>Pricing & Packages</h1>
                 <div className="package-tiles">
                     <div className="package-container">
