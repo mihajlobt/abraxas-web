@@ -6,22 +6,22 @@ class Contact extends React.Component {
         return (
             <div className="contact-form"  id="contact">
                 <h1>Contact Us!</h1>
-                <form>
+                <form action="mailto:info@abraxastechnology.com" method="post" encType="text/plain" data-request="http://abraxastechnology.com/cf-api/CF5a01bb5a565d0">
                     <div className="form-row">
                         <div className="form-column">
                             <div className="form-section">
                                 <label htmlFor="name">Name</label>
-                                <input id="name" />
+                                <input id="name" required />
                             </div>
                             <div className="form-section">
                                 <label htmlFor="phone">Phone</label>
-                                <input id="phone" />
+                                <input required id="phone" />
                             </div>
                         </div>
                         <div className="form-column">
                             <div className="form-section">
                                 <label htmlFor="location">Email Address</label>
-                                <input id="email" type="email" />
+                                <input required id="email" type="email" />
                             </div>
                             <div className="form-section">
                                 <label htmlFor="type">I am a</label>
@@ -35,9 +35,9 @@ class Contact extends React.Component {
                     <div className="form-column">
                         <div className="form-section">
                             <label htmlFor="location">Location</label>
-                            <input id="location"/>
+                            <input required id="location"/>
                         </div>
-                        <div className="form-section">
+                        <div required className="form-section">
                             <label htmlFor="message">Message</label>
                             <textarea id="message"></textarea>
                         </div>
