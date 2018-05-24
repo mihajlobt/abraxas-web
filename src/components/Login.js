@@ -18,7 +18,6 @@ class Login extends React.Component {
                         ABRAXAS HQ is Coming Soon! Our web-based dashboard helps users accurately determine the most valuable advertising locations and times of day, and measure advertisement effectiveness by correlating views with consumer behavior.
                     </div>
                 </div>
-                <Footer/>
             </div>
 
         )

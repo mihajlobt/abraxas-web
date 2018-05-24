@@ -1,0 +1,17 @@
+.main-container.blog-posts {
+  max-width: 960px;
+}
+
+.posts-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 130px auto;
+  font-size: 18px;
+  padding: 0 30px;
+}

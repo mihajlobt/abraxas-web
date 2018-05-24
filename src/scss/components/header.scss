@@ -4,40 +4,40 @@
 
 .homepage {
 
-  .scroll-btn {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    height: 60px;
-    width: 60px;
-    z-index: 10;
-    border-radius: 30px;
-    border: none;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(255,255,255,0.3);
-    transition: background-color 0.2s;
-    cursor: pointer;
+}
 
-    &:hover {
-      background-color: rgba(255,255,255,0.8);
-    }
-    &:focus {
-      outline: 0;
-    }
+.scroll-btn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  height: 60px;
+  width: 60px;
+  z-index: 10;
+  border-radius: 30px;
+  border: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.3);
+  transition: background-color 0.2s;
+  cursor: pointer;
 
-    .scroll-to-top {
-      height: 30px;
-      width: 30px;
-
-      background-image: url('../images/arrow-up.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+  &:hover {
+    background-color: rgba(255,255,255,0.8);
+  }
+  &:focus {
+    outline: 0;
   }
 
+  .scroll-to-top {
+    height: 30px;
+    width: 30px;
+
+    background-image: url('../images/arrow-up.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 

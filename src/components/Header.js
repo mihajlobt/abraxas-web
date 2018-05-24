@@ -60,6 +60,15 @@ class Header extends React.Component {
         }
     };
 
+    scrollToTop = () => {
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    };
+
+
     render() {
         let menuItems = this.state.items.map((item, index) => {
             let className = this.isSmallDisplay() ? item + " menu-item small" : item + " menu-item";
@@ -88,7 +97,7 @@ class Header extends React.Component {
 
         return (
             <div className="header-wrapper">
-                <div className="logo-image"> </div>
+                <a value={'home'} href={"/#home"} onClick={this.scrollToComponent} className="logo-image"> </a>
                 <div className="main-menu">
                     {!this.isSmallDisplay() ? menuItems : null}
                 </div>
@@ -96,6 +105,9 @@ class Header extends React.Component {
                 <div onClick={this.handleMenu} className={this.state.menu ? "burger-items opened" : "burger-items closed"}>
                     {this.isSmallDisplay() ? menuItems : null}
                 </div>
+                <button onClick={this.scrollToTop} className="scroll-btn">
+                    <div className="scroll-to-top"> </div>
+                </button>
             </div>
         )
     }
