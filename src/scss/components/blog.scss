@@ -7,6 +7,24 @@
   flex-wrap: wrap;
 }
 
+.entry-thumb {
+
+  display: flex;
+  justify-content: center;
+  img {
+    height: auto;
+  }
+}
+
+.under-construction-image {
+  background: url("../images/under-construction.png") no-repeat;
+
+  height: 228px;
+  max-width: 960px;
+  background-size: contain;
+  background-position: center;
+}
+
 article {
   display: flex;
   flex-direction: column;
@@ -14,4 +32,5 @@ article {
   margin: 130px auto;
   font-size: 18px;
   padding: 0 30px;
+  background: white;
 }

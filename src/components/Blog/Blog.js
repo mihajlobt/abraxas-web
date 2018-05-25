@@ -10,7 +10,12 @@ class Blog extends React.Component {
         return (
 
             <div className="posts-list">
-                <div className="post-preview">
+                <article>
+                    <h1>Under construction, will be back soon!</h1>
+
+                    <div className="under-construction-image"></div>
+                </article>
+                {/*<div className="post-preview">
                     <a href='/post-789'>
                         <img width="1270" height="714" src="http://abraxastechnology.com/wp-content/uploads/2018/05/question_analytics-1270x714.jpg" alt=""/>
                         <div>
@@ -121,7 +126,7 @@ class Blog extends React.Component {
                 </div>
                 <div className="post-preview">
                     <a href="/post-1">Top OOH Trends of 2017 Are In and You Can Probably Guess Why Were Excited</a>
-                </div>
+                </div>*/}
             </div>
         )
     }

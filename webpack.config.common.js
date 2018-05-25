@@ -2,19 +2,13 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const outputPath = path.join(__dirname, "dist");
 const port = process.env.PORT || 3000;
 
 module.exports = {
-    context: __dirname,
     entry: './src/App.js',
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: 'bundle.js',
-    },
-    resolve: {
-        modules: ['node_modules', './src'],
-        extensions: ['.js', '.jsx'],
+        filename: 'bundle.js'
     },
     module: {
         rules: [
@@ -61,15 +55,28 @@ module.exports = {
                 use: [
                     { loader: 'file-loader' }
                 ]
+            },
+            {
+                test: /\.html$/,
+                use: [
+                    {
+                        loader: "html-loader",
+                        options: {minimize: true}
+                    }
+                ]
             }
         ]
     },
     plugins: [
-        new ExtractTextPlugin("bundle.css"),
+        new HtmlWebpackPlugin({
+            template: "./index.html",
+            filename: "./index.html"
+        }),
+        new ExtractTextPlugin("bundle.css")
+
     ],
     devServer: {
         port,
         historyApiFallback: true,
-        publicPath: '/dist/',
     }
 };

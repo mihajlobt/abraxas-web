@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.dev.js",
-    "build:production": "webpack -p --config webpack.config.production.js",
-    "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.production.js"
+    "build:production": "webpack --config webpack.config.production.js",
+    "start": "webpack-dev-server --config webpack.config.production.js"
   },
   "keywords": [
     "react",
@@ -36,6 +36,7 @@
     "css-loader": "^0.28.9",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.7.2",
     "react-hot-loader": "^3.1.3",

@@ -11,11 +11,12 @@ class Home extends React.Component {
         super(props);
     }
 
+
     render() {
         return (
             <div className="homepage" id="home">
                 <Landing ref="home"/>
-                <Technology ref="technology"/>
+                <Technology {...this.props} ref="technology"/>
                 <Pricing ref="pricing"/>
                 <About ref="about"/>
                 <Contact ref="contact"/>

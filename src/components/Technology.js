@@ -2,6 +2,20 @@ import React from 'react';
 
 class Technology extends React.Component {
 
+    constructor(props){
+        super(props);
+    }
+
+    scrollToContact = e => {
+        let componentDOM = document.getElementById("contact");
+        e.preventDefault();
+        window.scroll({
+            top: componentDOM.offsetTop - 80,
+            behavior: 'smooth'
+        });
+        this.props.history.push("/contact");
+    };
+
     render() {
         return (
             <div className="technology-main"  id="technology">
@@ -47,7 +61,7 @@ class Technology extends React.Component {
                 <div className="technology-roi">
                     <h1>Interested in measuring your advertising ROI?</h1>
                     <span>Learn how ABRAXAS Technology can bring unprecedented insight to your advertising</span>
-                    <button>contact us</button>
+                    <button href="/#contact" onClick={this.scrollToContact}>contact us</button>
                 </div>
                 <div className="technology-scout">
                     <div className="technology-scout-text">

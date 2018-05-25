@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter as Link } from 'react-router-dom'
 
 class Header extends React.Component {
 
@@ -44,19 +45,24 @@ class Header extends React.Component {
 
     scrollToComponent = e => {
         const view = e.target.value;
-        let componentDOM = document.getElementById(view);
-        this.state.componentIntoView = view;
-        if (view && componentDOM) {
+        if (view !== "login" && view !== "blog" && view !== "terms") {
+            this.state.componentIntoView = view;
             e.preventDefault();
-            window.scroll({
-                top: componentDOM.offsetTop - 80,
-                behavior: 'smooth'
+            this.props.history.replace("/");
+
+            this.setState(this.state, ()=>{
+                let componentDOM = document.getElementById(view);
+
+                window.scroll({
+                    top: componentDOM.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+                this.props.history.push("#" + view);
+
             });
-            this.props.history.push("/#" + view);
-            this.setState(this.state);
 
         } else {
-            return false
+            this.props.history.push("/" + view);
         }
     };
 
@@ -72,15 +78,18 @@ class Header extends React.Component {
     render() {
         let menuItems = this.state.items.map((item, index) => {
             let className = this.isSmallDisplay() ? item + " menu-item small" : item + " menu-item";
+
             if (item === "blog" || item === "login") {
                 return (
-                    <a href={'/' + item} onClick={this.scrollToComponent} key={index} className={className} >
+                    <a  onClick={this.scrollToComponent} className={className}
+                       key={index}>
                         <button value={item}>{item}</button>
                     </a>
                 )
             } else {
+
                 return (
-                    <a href={'/#' + item} onClick={this.scrollToComponent} className={className}
+                    <a href={item} onClick={this.scrollToComponent} className={className}
                        key={index}>
                         <button value={item}>{item}</button>
                     </a>
@@ -97,7 +106,7 @@ class Header extends React.Component {
 
         return (
             <div className="header-wrapper">
-                <a value={'home'} href={"/#home"} onClick={this.scrollToComponent} className="logo-image"> </a>
+                <button value={'home'} href={"/home"} onClick={this.scrollToComponent} className="logo-image"> </button>
                 <div className="main-menu">
                     {!this.isSmallDisplay() ? menuItems : null}
                 </div>
