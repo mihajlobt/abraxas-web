@@ -13,7 +13,7 @@ class Technology extends React.Component {
             top: componentDOM.offsetTop - 80,
             behavior: 'smooth'
         });
-        this.props.history.push("/contact");
+        this.props.history.push("/#contact");
     };
 
     render() {
