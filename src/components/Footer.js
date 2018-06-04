@@ -12,7 +12,7 @@ class Footer extends React.Component {
                 </div>
                 <div className="footer-terms">
                     <div>© 2018 ABRAXAS TECHNOLOGY.</div>
-                    <a href="/terms">Terms & Conditions</a>
+                    <a href="/#/terms">Terms & Conditions</a>
                 </div>
             </div>
         )

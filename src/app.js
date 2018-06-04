@@ -16,16 +16,16 @@ const renderApplication = () => {
   ReactDOM.render(
       <HashRouter>
           <div>
-              <Route path="*" component={Header}></Route>
-              <Route exact path="/" component={Home}></Route>
+              <Route path="*" component={Header}/>
+              <Route exact path="/" component={Home}/>
 
               <Switch>
-                  <Route exact path="/home" component={Home}></Route>
+                  <Route exact path="/home" component={Home}/>
 
-                  <Route path="/blog" component={Blog}></Route>
+                  <Route path="/blog" component={Blog}/>
 
-                  <Route path="/login" component={Login}></Route>
-                  <Route path="/terms" component={TermsAndConditions}></Route>
+                  <Route path="/login" component={Login}/>
+                  <Route path="/terms" component={TermsAndConditions}/>
 
               </Switch>
               <Route path="*" component={Footer}/>

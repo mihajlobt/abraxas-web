@@ -4,7 +4,7 @@ import Footer from "./Footer";
 class TermsAndConditions extends React.Component {
     render() {
         return (
-            <div>
+            <div className="main-container">
                 <div className="terms-and-conditions">
                     <h1>Terms & Conditions</h1>
                     <div className="terms-section">
