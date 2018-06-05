@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2315e5b8-eb58-49ef-ad67-faa266ec2931" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Blog/Post.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.js" afterPath="$PROJECT_DIR$/src/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Blog/Blog.js" afterPath="$PROJECT_DIR$/src/components/Blog/Blog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Blog/Posts.js" afterPath="$PROJECT_DIR$/src/components/Blog/Posts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/components/blog.scss" afterPath="$PROJECT_DIR$/src/scss/components/blog.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/components/landing.scss" afterPath="$PROJECT_DIR$/src/scss/components/landing.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/main.scss" afterPath="$PROJECT_DIR$/src/scss/main.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -143,11 +136,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Blog.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Blog.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Blog/Blog.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" column="108" lean-forward="true" selection-start-line="24" selection-start-column="108" selection-end-line="24" selection-end-column="108" />
+              <caret line="24" column="108" lean-forward="false" selection-start-line="24" selection-start-column="108" selection-end-line="24" selection-end-column="108" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -159,17 +152,17 @@
         <entry file="file://$PROJECT_DIR$/src/components/Blog/Post.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" column="67" lean-forward="true" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+              <caret line="24" column="67" lean-forward="false" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="blog.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scss/components/blog.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="510">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -199,6 +192,7 @@
       <find>preview</find>
       <find>500</find>
       <find>list</find>
+      <find>a</find>
     </findStrings>
     <replaceStrings>
       <replace>contentEncoded</replace>
@@ -221,9 +215,9 @@
         <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/src/components/Blog/Posts.js" />
         <option value="$PROJECT_DIR$/src/scss/main.scss" />
-        <option value="$PROJECT_DIR$/src/scss/components/blog.scss" />
         <option value="$PROJECT_DIR$/src/components/Blog/Post.js" />
         <option value="$PROJECT_DIR$/src/components/Blog/Blog.js" />
+        <option value="$PROJECT_DIR$/src/scss/components/blog.scss" />
       </list>
     </option>
   </component>
@@ -276,19 +270,6 @@
               <item name="abraxas" type="b2602c69:ProjectViewProjectNode" />
               <item name="abraxas" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="abraxas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="abraxas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="abraxas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="abraxas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -358,12 +339,12 @@
       <option name="presentableId" value="Default" />
       <updated>1528135399772</updated>
       <workItem from="1528135401957" duration="5780000" />
-      <workItem from="1528141542641" duration="11065000" />
+      <workItem from="1528141542641" duration="11193000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16845000" />
+    <option name="totallyTimeSpent" value="16973000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -715,18 +696,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/components/blog.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Blog/Post.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="24" column="67" lean-forward="true" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+          <caret line="24" column="67" lean-forward="false" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -734,10 +707,18 @@
     <entry file="file://$PROJECT_DIR$/src/components/Blog/Blog.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="24" column="108" lean-forward="true" selection-start-line="24" selection-start-column="108" selection-end-line="24" selection-end-column="108" />
+          <caret line="24" column="108" lean-forward="false" selection-start-line="24" selection-start-column="108" selection-end-line="24" selection-end-column="108" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/components/blog.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
