@@ -68,6 +68,13 @@
   }
 }
 
+@media only screen and (max-width: 425px) {
+
+  .post-content {
+    max-width: 280px;
+  }
+}
+
 .post-preview {
 
   min-width: 280px;
