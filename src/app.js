@@ -8,39 +8,51 @@ import Login from './components/Login';
 import Blog from './components/Blog/Blog';
 import Footer from './components/Footer';
 
-import {BrowserRouter as Router, Route, Switch, HashRouter } from 'react-router-dom';
+import Posts from './components/Blog/Posts';
+import Post from './components/Blog/Post';
+
+import {BrowserRouter as Router, Route, Switch, HashRouter} from 'react-router-dom';
 import TermsAndConditions from "./components/TermsAndConditions";
 
 
 const renderApplication = () => {
-  ReactDOM.render(
-      <HashRouter>
-          <div>
-              <Route path="*" component={Header}/>
-              <Route exact path="/" component={Home}/>
 
-              <Switch>
-                  <Route exact path="/home" component={Home}/>
+    const blogRoutes = new Posts().item;
 
-                  <Route path="/blog" component={Blog}/>
+    let blogRoutesMap = blogRoutes.reverse().map((item, index) => {
+        return (
+            <Route key={index} path={"/" + item.wpPostName} render={ props => <Post item={item} />}/>
+        )
+    });
 
-                  <Route path="/login" component={Login}/>
-                  <Route path="/terms" component={TermsAndConditions}/>
+    ReactDOM.render(
+        <HashRouter>
+            <div className="main-component-wrapper">
+                <Route path="*" component={Header}/>
+                <Route exact path="/" component={Home}/>
 
-              </Switch>
-              <Route path="*" component={Footer}/>
+                <Switch>
+                    <Route exact path="/home" component={Home}/>
 
-          </div>
+                    <Route path="/blog" component={Blog}/>
 
-      </HashRouter> ,
-    document.querySelector('#root')
-  );
+                    <Route path="/login" component={Login}/>
+                    <Route path="/terms" component={TermsAndConditions}/>
+                    {blogRoutesMap}
+                </Switch>
+                <Route path="*" component={Footer}/>
+
+            </div>
+
+        </HashRouter>,
+        document.querySelector('#root')
+    );
 };
 
 renderApplication(Home);
 
 if (module.hot) {
-  module.hot.accept("./components/Home", () => {
-    renderApplication();
-  });
+    module.hot.accept("./components/Home", () => {
+        renderApplication();
+    });
 }

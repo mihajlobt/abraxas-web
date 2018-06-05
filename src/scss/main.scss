@@ -27,6 +27,11 @@ body, #root {
   line-height: 1.6;
 }
 
+.flexbox-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .flex-space-between {
   display: flex;
@@ -41,4 +46,9 @@ body, #root {
 
 .main-container {
   margin-top: 80px;
+}
+
+.main-component-wrapper {
+  display: flex;
+  flex-direction: column;
 }

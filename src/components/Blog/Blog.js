@@ -13,9 +13,15 @@ class Blog extends React.Component {
 
         let previews  = postPreviews.item.reverse().map((item, index) => {
             return (
-                <a key={index} href={"/#/" + item.wpPostName}>
+                <a className="post-wrapper" key={index} href={"/#/" + item.wpPostName}>
                     <article className="post-preview">
-                        <div className="post-title">{item.title}</div>
+                        <div className="flex-space-between">
+                            <span className="post-title">{item.title}</span>
+                            <div className="post-author">
+                                <span>{item.dcCreator}</span>
+                                <span>{item.pubDate.substr(0, 16)}</span>
+                            </div>
+                        </div>
                         <div className="post-content" dangerouslySetInnerHTML={{ __html: item.contentEncoded.replace(/\n/g, '<br />')}}></div>
                     </article>
                 </a>
