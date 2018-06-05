@@ -11,7 +11,7 @@
 
   .landing-text {
     text-shadow: 0 2px #000;
-    top: 60px;
+    top: 70px;
     position: absolute;
     max-width: 650px;
     color: #f8f8f8;
@@ -20,13 +20,15 @@
     padding: 10%;
   }
 
-  @media only screen and (max-width: 768px) {
-
+  @media screen and (max-width: 460px) {
     .landing-text {
       font-size: 30px;
+      line-height: 56px;
+    }
+
+    .landing-background {
+      background-position-x: -1120px;
     }
   }
-
-
 
 }
