@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import Posts from './Posts';
 
 class Blog extends React.Component {
@@ -7,13 +6,18 @@ class Blog extends React.Component {
         super(props);
     }
 
+    pushLocalHistory = view => {
+        this.props.history.push("/" + view);
+        window.scrollTo(0,0)
+    };
+
     render() {
 
         let postPreviews = new Posts;
 
         let previews  = postPreviews.item.reverse().map((item, index) => {
             return (
-                <a className="post-wrapper" key={index} href={"/#/" + item.wpPostName}>
+                <a className="post-wrapper" onClick={this.pushLocalHistory.bind(this, item.wpPostName)} key={index}>
                     <article className="post-preview">
                         <div className="flex-space-between">
                             <span className="post-title">{item.title}</span>

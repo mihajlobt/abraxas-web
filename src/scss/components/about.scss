@@ -28,6 +28,12 @@
 
   }
 
+  @media only screen and (max-width: 460px) {
+    .member {
+      margin: 5px;
+    }
+  }
+
   .member-info {
     display: flex;
     align-items: center;

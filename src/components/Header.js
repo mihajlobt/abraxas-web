@@ -81,8 +81,7 @@ class Header extends React.Component {
 
             if (item === "blog" || item === "login") {
                 return (
-                    <a  onClick={this.scrollToComponent} className={className}
-                       key={index}>
+                    <a onClick={this.scrollToComponent} className={className} key={index}>
                         <button value={item}>{item}</button>
                     </a>
                 )
