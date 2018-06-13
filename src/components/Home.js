@@ -23,12 +23,14 @@ class Home extends React.Component {
 
     scrollToComponent(){
         const component = this.props.location.hash;
-        const componentDOM = document.querySelector(component);
 
-        window.scroll({
-            top: componentDOM.offsetTop - 80,
-            behavior: 'smooth'
-        });
+        if (component.length !== 0) {
+            const componentDOM = document.querySelector(component);
+            window.scroll({
+                top: componentDOM.offsetTop - 80,
+                behavior: 'smooth'
+            });
+        }
     }
 
     render() {

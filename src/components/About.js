@@ -2,7 +2,7 @@ import React from 'react';
 import justin from '../images/Justin-G.png';
 import joshua from '../images/Lawton-Belous.png';
 import steve from '../images/Steve-Meyer.png';
-import irene from '../images/Irene.png';
+import irene from '../images/irene-new.png';
 import bradley from '../images/Bradley.png';
 import aaron from '../images/Aaron.png';
 
@@ -76,7 +76,7 @@ class About extends React.Component {
 
         let renderTeam = this.state.team.map((member, index) => {
             return (
-                <div className="member" onClick={this.isOpened.bind(this, member, index)}>
+                <div key={index} className="member" onClick={this.isOpened.bind(this, member, index)}>
                     <div className="member-info">
                         <div className="member-image"><img src={member.memberImage}/></div>
                         <div className="member-text">
@@ -85,7 +85,7 @@ class About extends React.Component {
                         </div>
 
                     </div>
-                    {member.open ? (<div>{member.memberAbout}</div>) : null}
+                    {member.open ? (<div className="member-about">{member.memberAbout}</div>) : null}
                 </div>
 
 
