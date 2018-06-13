@@ -1,9 +1,18 @@
 import React from 'react';
 import Posts from './Posts';
 
+
+
 class Blog extends React.Component {
     constructor(props) {
         super(props);
+        let posts = new Posts();
+        let images = posts.item.reverse().map((item, index)=>{
+            return {image: item.image}
+        });
+        this.state = {
+            images
+        }
     }
 
     pushLocalHistory = view => {
@@ -21,6 +30,9 @@ class Blog extends React.Component {
                     <article className="post-preview">
                         <div className="flex-space-between">
                             <span className="post-title">{item.title}</span>
+                            <div className='post-image-container'>
+                            <img src={this.state.images[index].image} className='post-image'/>
+                            </div>
                             <div className="post-author">
                                 <span>{item.dcCreator}</span>
                                 <span>{item.pubDate.substr(0, 16)}</span>

@@ -17,6 +17,7 @@ class Post extends React.Component {
                 <div className="post-article">
                     <div>
                         <h1>{item.title}</h1>
+                        <img src={item.image} />
                         <div className="post-author">
                             <span>{item.dcCreator}</span>
                             <span>{item.pubDate.substr(0, 16)}</span>

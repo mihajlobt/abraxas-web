@@ -1,9 +1,9 @@
 import React from 'react';
 import Landing from './Landing';
 import Technology from './Technology';
-import Pricing from './Pricing';
 import About from './About';
 import Contact from './Contact';
+import Pricing from "./Pricing";
 
 
 class Home extends React.Component {
@@ -11,13 +11,30 @@ class Home extends React.Component {
         super(props);
     }
 
+    componentDidMount(){
+        window.scrollTo(0,0);
+        this.scrollToComponent();
+    }
+
+    componentDidUpdate(){
+
+        this.scrollToComponent();
+    }
+
+    scrollToComponent(){
+        const component = this.props.location.hash;
+        const componentDOM = document.querySelector(component);
+
+        window.scroll({
+            top: componentDOM.offsetTop - 80,
+            behavior: 'smooth'
+        });
+    }
 
     render() {
         return (
             <div className="homepage" id="home">
                 <Landing ref="home"/>
-                <Technology {...this.props} ref="technology"/>
-                <Pricing ref="pricing"/>
                 <About ref="about"/>
                 <Contact ref="contact"/>
             </div>

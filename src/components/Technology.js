@@ -7,13 +7,8 @@ class Technology extends React.Component {
     }
 
     scrollToContact = e => {
-        let componentDOM = document.getElementById("contact");
         e.preventDefault();
-        window.scroll({
-            top: componentDOM.offsetTop - 80,
-            behavior: 'smooth'
-        });
-        this.props.history.push("/#contact");
+        this.props.history.replace("/#contact");
     };
 
     render() {

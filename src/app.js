@@ -13,6 +13,8 @@ import Post from './components/Blog/Post';
 
 import {BrowserRouter as Router, Route, Switch, HashRouter} from 'react-router-dom';
 import TermsAndConditions from "./components/TermsAndConditions";
+import Pricing from "./components/Pricing";
+import Technology from "./components/Technology";
 
 
 const renderApplication = () => {
@@ -35,6 +37,8 @@ const renderApplication = () => {
                     <Route exact path="/home" component={Home}/>
 
                     <Route path="/blog" component={Blog}/>
+                    <Route path="/pricing" component={Pricing}/>
+                    <Route path="/technology" component={Technology}/>
 
                     <Route path="/login" component={Login}/>
                     <Route path="/terms" component={TermsAndConditions}/>

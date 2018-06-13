@@ -6,10 +6,7 @@
   justify-content: center;
   max-width: 1450px;
 
-  img {
-    max-width: 870px;
-    height: auto;
-  }
+  
 
   a {
     text-decoration: none;
@@ -92,10 +89,10 @@
   font-family: 'Roboto' sans-serif;
 
   .post-title {
-    font-size: 34px;
+    font-size: 28px;
     font-weight: bold;
     margin-bottom: 30px;
-
+  text-align:center;
     color: rgb(120,18,21);
   }
 
@@ -123,3 +120,15 @@
 .blog-posts {
   margin-top: 80px;
 }
+
+.post-image-container{
+  width: 100%;
+
+}
+
+.post-image {
+  max-width: 300px;
+  display: flex;
+  margin: auto;
+}
+
