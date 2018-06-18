@@ -13,6 +13,7 @@ import Post from './components/Blog/Post';
 
 import {BrowserRouter as Router, Route, Switch, HashRouter} from 'react-router-dom';
 import TermsAndConditions from "./components/TermsAndConditions";
+import PrivacyPolicy from './components/PrivacyPolicy';
 import Pricing from "./components/Pricing";
 import Technology from "./components/Technology";
 
@@ -42,6 +43,7 @@ const renderApplication = () => {
 
                     <Route path="/login" component={Login}/>
                     <Route path="/terms" component={TermsAndConditions}/>
+                    <Route path="/privacypolicy" component={PrivacyPolicy}/>
                     {blogRoutesMap}
                 </Switch>
                 <Route path="*" component={Footer}/>

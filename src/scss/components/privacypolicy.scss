@@ -1,0 +1,17 @@
+.privacy-policy {
+
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+
+  .policy-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .email-link{
+    color:red;
+  }
+}
