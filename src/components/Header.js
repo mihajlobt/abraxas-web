@@ -13,6 +13,7 @@ class Header extends React.Component {
             items: [
                 "home",
                 "about",
+                "careers",
                 "contact",
                 "technology",
                 "pricing",
@@ -45,7 +46,7 @@ class Header extends React.Component {
 
     scrollToComponent = e => {
         const view = e.target.value;
-        if (view !== "login" && view !== "blog" && view !== "terms" && view !== "technology" && view !== "pricing") {
+        if (view !== "login" && view !== "blog" && view !== "terms" && view !== "technology" && view !== "pricing" && view!=="careers") {
             this.state.componentIntoView = view;
             e.preventDefault();
             /*this.props.history.replace("/");
@@ -81,7 +82,7 @@ class Header extends React.Component {
         let menuItems = this.state.items.map((item, index) => {
             let className = this.isSmallDisplay() ? item + " menu-item small" : item + " menu-item";
 
-            if (item === "blog" || item === "login" || item === "technology" || item === "pricing") {
+            if (item === "blog" || item === "login" || item === "technology" || item === "pricing" || item === "careers") {
                 return (
                     <a onClick={this.scrollToComponent} className={className} key={index}>
                         <button value={item}>{item}</button>
