@@ -47,7 +47,7 @@ class PrivacyPolicy extends React.Component {
                             This Statement covers only data collected through our website or Services.
                             </p>
                             <p>
-                            For questions regarding this policy or to submit a privacy-related request: <a href="mailto:privacy@abraxastechnology.com" className='email-link'>CLICK HERE </a>
+                            For questions regarding this policy or to submit a privacy-related request: <a href="mailto:info@abraxastechnology.com" className='email-link'>CLICK HERE </a>
                             </p>
                             <p>
                             You acknowledge notice of this Statement and agree with and acknowledge the terms,
@@ -134,7 +134,7 @@ class PrivacyPolicy extends React.Component {
                             through the Services, because you actively submit it. With respect to Data collected from
                             Individuals, we only collect Data from electronic devices that provides OOH advertisers with
                             data that can not readily be used to identify you. You may contact us at
-                            <a href="mailto:privacy@abraxastechnology.com"> privacy@abraxastechnology.com</a> with further questions.
+                            <a href="mailto:info@abraxastechnology.com"> info@abraxastechnology.com</a> with further questions.
                             </p>
                             <p>
                             Additionally, when you visit the Abraxas public Web site(s), Google Analytics may passively
@@ -221,7 +221,7 @@ class PrivacyPolicy extends React.Component {
                                 <p>
                                 Abraxas does not seek to conduct business or communicate with folks that are not interested
                                 in working with Abraxas or hearing from Abraxas. You always have the right to opt-out. To
-                                submit a request contact <a href="mailto:privacy@abraxastechnology.com"> privacy@abraxastechnology.com</a>
+                                submit a request contact <a href="mailto:info@abraxastechnology.com"> info@abraxastechnology.com</a>
                                 </p>
                                 <p>
                                 In connection with promotions or other projects, we may ask you specifically whether you
@@ -236,7 +236,7 @@ class PrivacyPolicy extends React.Component {
                                 data privacy policies, which may differ from ours and you would have to contact them
                                 separately with respect to opt-out requests. If you are having difficulty opting out of any
                                 lists, communications, promotions, or from any Services, please contact us at
-                                <a href="mailto:privacy@abraxastechnology.com"> privacy@abraxastechnology.com </a> for further assistance.
+                                <a href="mailto:info@abraxastechnology.com"> info@abraxastechnology.com </a> for further assistance.
                                 </p>
                                 Please note that it is not possible to opt out of any services that do not personally identify
                                 you.
@@ -263,7 +263,7 @@ class PrivacyPolicy extends React.Component {
                                     accordance with the Terms of Service and this Privacy Policy, Abraxas may access Customer
                                     Data only for the purpose of providing the Services, or preventing or addressing service or
                                     technical problems, or as may be required by law. If you wish to correct or update your Data,
-                                    please contact us at <a href="mailto:privacy@abraxastechnology.com"> privacy@abraxastechnology.com</a>
+                                    please contact us at <a href="mailto:info@abraxastechnology.com"> info@abraxastechnology.com</a>
                                 </div>
 
                                 <h3>Your California Privacy Rights</h3>
@@ -271,7 +271,7 @@ class PrivacyPolicy extends React.Component {
                                     California law provides that California residents have a right to request businesses to tell
                                     them how their personal information has been shared, if at all, with third parties for the third
                                     parties’ direct marketing purposes. While Abraxas does not collect or share or personal
-                                    information, you are still welcome to contact us at <a href="mailto:privacy@abraxastechnology.com"> privacy@abraxastechnology.com </a> to submit
+                                    information, you are still welcome to contact us at <a href="mailto:info@abraxastechnology.com"> info@abraxastechnology.com </a> to submit
                                     a formal request and receive a formal response.
                                 </div>
 
@@ -289,7 +289,7 @@ class PrivacyPolicy extends React.Component {
                                 <div>
                                     If you live in one of the 48 States that isn’t Texas or California, or a foreign country, you may
                                     also have unique privacy or data rights. If you wish to contact us pursuant to another state or
-                                    foreign law, please contact us at  <a href="mailto:privacy@abraxastechnology.com"> privacy@abraxastechnology.com </a> and be sure to provide a
+                                    foreign law, please contact us at  <a href="mailto:info@abraxastechnology.com"> info@abraxastechnology.com </a> and be sure to provide a
                                     citation or link to any law you reference so we can do our best to help you.
                                 </div>
                             </div>
@@ -317,8 +317,8 @@ class PrivacyPolicy extends React.Component {
                                 <p>
                                 You have the right to be informed of what data we may have, how we process it for business
                                 purposes, and how we store it. Reading this Privacy Policy carefully will provide all such information,
-                                but if you are having trouble finding it yourself within this document, you may contact us here: <a href="mailto:privacy@abraxastechnology.com">
-                                privacy@abraxastechnology.com </a>
+                                but if you are having trouble finding it yourself within this document, you may contact us here: <a href="mailto:info@abraxastechnology.com">
+                                info@abraxastechnology.com </a>
                                 </p>
                                 <p>
                                 You also have the right to contact us and inquire if we have any data about you, and how any
@@ -331,7 +331,7 @@ class PrivacyPolicy extends React.Component {
                                 <p>
                                 You have the right to correct any data we do possess about you. Who wants incorrect data??
                                 Not us, and not you either! Please email us with any rectification requests:
-                                <a href="mailto:privacy@abraxastechnology.com"> privacy@abraxastechnology.com</a> In the event that any of your information is incorrect, you
+                                <a href="mailto:info@abraxastechnology.com"> info@abraxastechnology.com</a> In the event that any of your information is incorrect, you
                                 may also request that we discontinue processing of your data.
                                 </p>
                                 <p>
@@ -343,7 +343,7 @@ class PrivacyPolicy extends React.Component {
                                 <p>
                                 You also have the right to object to our use of your data. If you wish to submit an objection,
                                 you must provide an explanation for your objection so we can determine how to best service
-                                your request. Please send objections and explanations to  <a href="mailto:privacy@abraxastechnology.com"> privacy@abraxastechnology.com</a>
+                                your request. Please send objections and explanations to  <a href="mailto:info@abraxastechnology.com"> info@abraxastechnology.com</a>
                                 </p>
                                 *Abraxas does not intend for its software or services to be used for any automated decisionmaking
                                 purposes.
@@ -379,7 +379,7 @@ class PrivacyPolicy extends React.Component {
                                 under the age of 13 without the consent of the child’s parent or legal guardian. If a parent or
                                 guardian becomes aware that his or her child has provided us with personal or contact
                                 information without their consent, the parent or guardian should contact us immediately at
-                                <a href="mailto:privacy@abraxastechnology.com"> privacy@abraxastechnology.com</a>. If we become aware that we have inadvertently collected
+                                <a href="mailto:info@abraxastechnology.com"> info@abraxastechnology.com</a>. If we become aware that we have inadvertently collected
                                 personally identifiable information from a child under the age of 13, we will immediately take
                                 reasonable steps to delete such information from our Site and / or Services.
 
@@ -401,7 +401,7 @@ class PrivacyPolicy extends React.Component {
                         <div className="policy-section">
                             <h2>Contact Us </h2>
                             <div>
-                                <p>If you have any questions about this Statement, please email us at  <a href="mailto:privacy@abraxastechnology.com"> privacy@abraxastechnology.com</a>, or you may
+                                <p>If you have any questions about this Statement, please email us at  <a href="mailto:info@abraxastechnology.com"> info@abraxastechnology.com</a>, or you may
                                     contact us at the following address:</p>
                                 <p>
                                     Abraxas Technology

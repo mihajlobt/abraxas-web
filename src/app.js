@@ -17,6 +17,7 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import Pricing from "./components/Pricing";
 import Technology from "./components/Technology";
 import Careers from "./components/Careers";
+import SaaSTermsConditions from "./components/SaaSTermsConditions";
 
 
 const renderApplication = () => {
@@ -46,6 +47,7 @@ const renderApplication = () => {
                     <Route path="/terms" component={TermsAndConditions}/>
                     <Route path="/privacypolicy" component={PrivacyPolicy}/>
                     <Route path ="/careers" component={Careers}/>
+                    <Route path = "/SaaSTerms_Conditions" component={SaaSTermsConditions}/>
                     {blogRoutesMap}
                 </Switch>
                 <Route path="*" component={Footer}/>

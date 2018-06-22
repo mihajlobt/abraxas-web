@@ -1,4 +1,5 @@
 import React from 'react';
+import MetaTags from 'react-meta-tags';
 
 
 class Post extends React.Component {
@@ -15,6 +16,11 @@ class Post extends React.Component {
 
         return(
             <div className="main-container">
+                <MetaTags>
+                    <title>{item.title}</title>
+                    <meta property="og:title" content={item.title} />
+                    <meta property="og:image" content={item.image} />
+                </MetaTags>
                 <div className="post-article">
                     <div>
                         <h1>{item.title}</h1>

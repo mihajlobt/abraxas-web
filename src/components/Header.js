@@ -12,11 +12,11 @@ class Header extends React.Component {
             componentIntoView: null,
             items: [
                 "home",
+                "technology",
+                "pricing",
                 "about",
                 "careers",
                 "contact",
-                "technology",
-                "pricing",
                 "blog",
                 "login",
             ],
