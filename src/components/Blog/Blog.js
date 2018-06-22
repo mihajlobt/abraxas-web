@@ -1,5 +1,6 @@
 import React from 'react';
 import Posts from './Posts';
+import MetaTags from 'react-meta-tags';
 
 
 
@@ -27,6 +28,11 @@ class Blog extends React.Component {
         let previews  = postPreviews.item.reverse().map((item, index) => {
             return (
                 <a className="post-wrapper" onClick={this.pushLocalHistory.bind(this, item.wpPostName)} key={index}>
+                    <MetaTags>
+                        <title>{item.title}</title>
+                        <meta property="og:title" content={item.title} />
+                        <meta property="og:image" content={this.state.images[index].image} />
+                    </MetaTags>
                     <article className="post-preview">
                         <div className="flex-space-between">
                             <span className="post-title">{item.title}</span>
