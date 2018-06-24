@@ -1310,6 +1310,13 @@ class SaaSTermsConditions extends React.Component {
                                 of this <b>Agreement</b>.
                             </p>
 
+                            <p>
+                                To indicate agreement with these terms and conditions, please sign this online document's counterpart, presented
+                                directly to Customer, that contains key business terms such as pricing and other Customer-specific information. No
+                                signature is required here. If Customer disagrees with any provision of this Agreement, Customer must notify Abraxas
+                                within 72 hours of signing this Agreement (or its counterpart)
+                            </p>
+
                             </div>
                         </div>
 
