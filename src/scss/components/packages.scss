@@ -1,0 +1,59 @@
+.packages-main {
+  margin-top:40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f8f8f8;
+
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .packages-illustration {
+    background: url("../images/ABRAXAS-Infographic.png") no-repeat center;
+    height: 60vh;
+    width: 100%;
+    background-size: contain;
+    margin-top: 30px;
+  }
+
+  .event-illustration {
+    background: url("../images/event.jpg") no-repeat center;
+    height: 60vh;
+    width: 100%;
+    background-size: contain;
+    margin-top: 30px;
+  }
+  .business-illustration {
+    background: url("../images/business.jpg") no-repeat center;
+    height: 60vh;
+    width: 100%;
+    background-size: contain;
+    margin-top: 30px;
+  }
+
+  .packages-scout {
+    background-color: white;
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .packages-scout-text {
+      padding: 40px;
+      max-width: 900px;
+    }
+
+
+
+    .packages-headers {
+      color: #2db490;
+    }
+  }
+
+
+
+
+  }

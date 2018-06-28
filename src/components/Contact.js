@@ -5,7 +5,26 @@ class Contact extends React.Component {
     render() {
         return (
             <div className="contact-form"  id="contact">
+                <div className="contact-header">
                 <h1>Contact Us!</h1>
+                </div>
+                <div className="contact-section">
+                    <div className="left-contact">
+                        <h2> HEADQUARTERS</h2>
+                        <div className="contact-headquarters">
+
+                        <p> Abraxas Technology</p>
+                        <p> 4009 Banister Lane, Suite 430 </p>
+                        <p> Austin, TX 78704</p>
+                        </div>
+                        <h3>MAIN</h3>
+                        <div className="contact-main">
+                        <p>(512) 525-8154</p>
+                        <p> info@abraxastechnology.com  </p>
+                        </div>
+
+                    </div>
+                    <div className="right-contact">
                 <form action="mailto:info@abraxastechnology.com" method="post" encType="text/plain" data-request="http://abraxastechnology.com/cf-api/CF5a01bb5a565d0">
                     <div className="form-row">
                         <div className="form-column">
@@ -44,6 +63,8 @@ class Contact extends React.Component {
                     </div>
                     <button className="submit-message" type="submit">Submit</button>
                 </form>
+                    </div>
+                </div>
             </div>
         )
     }

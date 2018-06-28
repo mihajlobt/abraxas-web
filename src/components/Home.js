@@ -1,9 +1,7 @@
 import React from 'react';
 import Landing from './Landing';
-import Technology from './Technology';
 import About from './About';
 import Contact from './Contact';
-import Pricing from "./Pricing";
 
 
 class Home extends React.Component {

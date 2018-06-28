@@ -19,6 +19,13 @@ import Technology from "./components/Technology";
 import Careers from "./components/Careers";
 import SaaSTermsConditions from "./components/SaaSTermsConditions";
 
+import Product from "./components/Product";
+import EventPlanners from "./components/EventPlanners";
+import SmartCities from "./components/SmartCities";
+import AdvertisersMediaBuyers from "./components/AdvertisersMediaBuyers";
+import BillboardOwners from "./components/BillboardOwners";
+import SmallBusinessOwners from "./components/SmallBusinessOwners";
+
 
 const renderApplication = () => {
 
@@ -35,10 +42,8 @@ const renderApplication = () => {
             <div className="main-component-wrapper">
                 <Route path="*" component={Header}/>
                 <Route exact path="/" component={Home}/>
-
                 <Switch>
                     <Route exact path="/home" component={Home}/>
-
                     <Route path="/blog" component={Blog}/>
                     <Route path="/pricing" component={Pricing}/>
                     <Route path="/technology" component={Technology}/>
@@ -48,8 +53,16 @@ const renderApplication = () => {
                     <Route path="/privacypolicy" component={PrivacyPolicy}/>
                     <Route path ="/careers" component={Careers}/>
                     <Route path = "/SaaSTerms_Conditions" component={SaaSTermsConditions}/>
+                    <Route path ="/product" component={Product}/>
+                    <Route path ="/advertisers-media-buyers" component={AdvertisersMediaBuyers} />
+                    <Route path ="/billboard-owners" component={BillboardOwners} />
+                    <Route path ="/event-planners" component ={EventPlanners} />
+                    <Route path = "/small-business-owners" component={SmallBusinessOwners}/>
+                    <Route path ="/smart-cities" component={SmartCities} />
                     {blogRoutesMap}
                 </Switch>
+
+
                 <Route path="*" component={Footer}/>
 
             </div>

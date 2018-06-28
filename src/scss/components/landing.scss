@@ -24,10 +24,12 @@
     .landing-text {
       font-size: 30px;
       line-height: 56px;
+      z-index: 999;
     }
 
     .landing-background {
       background-position-x: -1120px;
+      filter: blur(2px);
     }
   }
 

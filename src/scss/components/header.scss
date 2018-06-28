@@ -6,6 +6,7 @@
 
 }
 
+
 .scroll-btn {
   position: fixed;
   right: 30px;
@@ -221,8 +222,42 @@
       }
     }
 
+    .sub-menu-item {
+      display: none;
+
+      &.small {
+        display: flex;
+        padding: 10px 25px;
+        border-bottom: 1px solid #cecece;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+
 
   }
+
+
+}
+.sub-menu{
+  position:absolute;
+  display:flex;
+  flex-direction: column;
+  background-color:#f8f8f8;
+
+}
+.sub-menu-item{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+
+
+}
+
+.sub-second-item{
+ font-size:10px;
 
 }
 
