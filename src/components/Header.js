@@ -7,7 +7,6 @@ class Header extends React.Component {
         this.state = {
             isSmallDisplay: null,
             menu: false,
-            menuUnderline: null,
             componentIntoView: null,
             items: [
                 {name: "home", path: "home"},
@@ -45,8 +44,15 @@ class Header extends React.Component {
         })
     };
 
-    handleMenu = () => {
-        this.state.menu = !this.state.menu;
+    handleMenu = event => {
+        const {value: view} = event.target;
+
+        this.state.componentIntoView = view;
+
+        if (view !== "technology" && view !== "packages") {
+            this.state.menu = !this.state.menu;
+        }
+
         this.setState(this.state);
 
     };
@@ -98,7 +104,7 @@ class Header extends React.Component {
                     if (subItem.name === "packages") {
                         let packagesMenu = subItem.subItems.map((packageSubItem, packageItemIndex)=>{
                             return (
-                                <a onClick={this.scrollToComponent} className={className + ' sub-menu-item'} key={packageItemIndex}>
+                                <a onClick={this.scrollToComponent} className={className + ' sub-menu-item package-item'} key={packageItemIndex}>
                                     <button value={packageSubItem.path}>{packageSubItem.name}</button>
                                 </a>
                             )
@@ -106,8 +112,8 @@ class Header extends React.Component {
 
                         let wrappedPackagesMenu = (<div onMouseLeave={this.handleHover.bind(this, subItem, subIndex)}>{packagesMenu}</div>);
                         return (
-                            <div onMouseEnter={this.handleHover.bind(this, subItem, subIndex)} className={className + ' sub-menu-item'} key={subIndex}>
-                                <a onClick={this.scrollToComponent} className={className + 'sub-menu-item'}>
+                            <div onClick={this.handleHover.bind(this, subItem, subIndex)} onMouseEnter={!this.isSmallDisplay() ? this.handleHover.bind(this, subItem, subIndex) : null}  className={className + ' sub-menu-item'} key={subIndex}>
+                                <a onClick={this.scrollToComponent} >
                                     <button value={subItem.path}>{subItem.name} -></button>
                                 </a>
                                 {subItem.isOpened ? wrappedPackagesMenu : null}
@@ -122,10 +128,10 @@ class Header extends React.Component {
                     }
                 });
 
-                let wrappedSubMenu = (<div onMouseLeave={this.handleHover.bind(this, item, index)} className={'sub-menu sub-menu-opened'}>{subMenu}</div>);
+                let wrappedSubMenu = (<div onMouseLeave={this.handleHover.bind(this, item, index)} className={this.isSmallDisplay() ? 'sub-menu sub-menu-opened sub-menu-small' : 'sub-menu sub-menu-opened'}>{subMenu}</div>);
 
                 return (
-                    <div onMouseEnter={this.handleHover.bind(this, item, index)} className={className} key={index}>
+                    <div onClick={this.handleHover.bind(this, item, index)} onMouseEnter={!this.isSmallDisplay() ? this.handleHover.bind(this, item, index) : null} className={className} key={index}>
                         <button value={item.name}>{item.name}</button>
                         {item.isOpened ? wrappedSubMenu : null}
                     </div>

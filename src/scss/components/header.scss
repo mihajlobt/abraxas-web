@@ -214,8 +214,12 @@
 
       &.small {
         display: flex;
-        padding: 10px 25px;
-        border-bottom: 1px solid #cecece;
+        flex-direction: column;
+        align-items: flex-start;
+
+        button {
+          padding: 10px;
+        }
 
         &:last-child {
           border-bottom: none;
@@ -228,13 +232,17 @@
 
       &.small {
         display: flex;
-        padding: 10px 25px;
-        border-bottom: 1px solid #cecece;
+        border-top: 1px solid #cecece;
+        width: 100%;
 
         &:last-child {
           border-bottom: none;
         }
       }
+    }
+
+    .package-item {
+      background-color: #b8baba;
     }
 
 
@@ -256,18 +264,17 @@
     display: flex;
   }
 
+  &-small {
+    position: relative;
+    flex: 1;
+    width: 100%;
+  }
+
 }
 .sub-menu-item{
   display: flex;
   flex-direction: column;
   text-decoration: none;
   width: 300px;
-
-
-}
-
-.sub-second-item{
- font-size:10px;
-
 }
 
