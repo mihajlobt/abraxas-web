@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const port = process.env.PORT || 3000;
 
 module.exports = {
-    entry: './src/App.js',
+    entry: './src/app.js',
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'bundle.js'

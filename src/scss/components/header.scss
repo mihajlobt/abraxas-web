@@ -109,6 +109,7 @@
 
       &:hover {
         color: #000;
+        background-color: #eaeaea;
       }
     }
   }
@@ -247,11 +248,20 @@
   flex-direction: column;
   background-color:#f8f8f8;
 
+  &-closed {
+    display: none;
+  }
+
+  &-opened {
+    display: flex;
+  }
+
 }
 .sub-menu-item{
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  width: 300px;
 
 
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import {BrowserRouter as Link} from 'react-router-dom'
 
 class Header extends React.Component {
 
@@ -11,59 +10,26 @@ class Header extends React.Component {
             menuUnderline: null,
             componentIntoView: null,
             items: [
-                "home",
-                "technology",
-                "about",
-                "careers",
-                "contact",
-                "blog",
-                "login",
-            ],
-            subMenuItems : [
-                "product",
-                "packages"
-            ],
-            subSecondMenuItems :[
-                {
-                    pathName:"advertisers-media-buyers",
-                    linkName : "Advertisers / Media Buyers"
-                },
-                {
-                    pathName:"billboard-owners",
-                    linkName : "Billboard Owners"
-                },
-                {
-                    pathName:"event-planners",
-                    linkName : "Event Planners"
-                },
-                {
-                    pathName:"small-business-owners",
-                    linkName : "Small Business Owners"
-                },
-                {
-                    pathName:"smart-cities",
-                    linkName : "Smart Cities"
-                }
-                ],
-            subMenuOpened : false,
-            subSecondMenuOpened:false,
+                {name: "home", path: "home"},
+                {name: "technology", path: "technology", isOpened: false, subItems: [
+                        {name: "pricing", path: "pricing"},
+                        {name: "packages", path: "packages", isOpened: false, subItems: [
+                                {name: "Advertisers/Media Buyers", path: "advertisers-media-buyers"},
+                                {name: "Billboard Owners", path: "billboard-owners"},
+                                {name: "Event Planners", path: "event-planners"},
+                                {name: "Small Business Owners", path: "small-business-owners"},
+                                {name: "Smart Cities", path: "smart-cities"}
+                        ]}
+                    ]},
+                {name: "about", path: "about"},
+                {name: "careers", path: "careers"},
+                {name: "contact", path: "contact"},
+                {name: "blog", path: "blog"},
+                {name: "login", path: "login"}
+            ]
         }
     }
 
-    handleHover = () => {
-        this.setState({ subMenuOpened : true });
-    };
-    handleSubHover = () => {
-        this.setState({ subSecondMenuOpened: true });
-    };
-
-    handleLeave = () => {
-        this.setState({ subMenuOpened : false });
-    };
-
-    handleSubLeave = () => {
-        this.setState({ subSecondMenuOpened: false });
-    };
     isSmallDisplay = () => {
         return window.innerWidth <= 768;
     };
@@ -87,20 +53,9 @@ class Header extends React.Component {
 
     scrollToComponent = e => {
         const view = e.target.value;
-        if (view !== "login" && view !== "blog" && view !== "terms" && view !== "technology"  && view!=="careers" && view !== "packages" && view !== "product" && view !== "advertisers-media-buyers" && view!== "billboard-owners" && view!== "event-planners" && view !== "small-business-owners" && view!== "smart-cities") {
+        if (view !== "login" && view !== "blog" && view !== "terms" && view !== "technology"  && view!=="careers" && view !== "packages" && view !== "product" && view !== "pricing" && view !== "advertisers-media-buyers" && view!== "billboard-owners" && view!== "event-planners" && view !== "small-business-owners" && view!== "smart-cities") {
             this.state.componentIntoView = view;
             e.preventDefault();
-            /*this.props.history.replace("/");
-
-            this.setState(this.state, ()=>{
-                let componentDOM = document.getElementById(view);
-
-                window.scroll({
-                    top: componentDOM.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-
-            });*/
             this.props.history.replace("/#" + view);
 
 
@@ -118,75 +73,70 @@ class Header extends React.Component {
         });
     };
 
+    handleHover = (item, index) => {
+        item.isOpened = !item.isOpened;
+        this.setState(this.state);
+    };
+
 
     render() {
 
-        let subMenu = this.state.subMenuItems.map((item,index)=> {
-            let className = this.isSmallDisplay() ? item + " menu-item small" : item + " menu-item";
-            if( item === "packages"){
-                    return (
-                        <div onMouseLeave={this.handleSubLeave}>
-                            <a  onMouseEnter={this.handleSubHover} onClick={this.scrollToComponent} className={className} key={index}>
-                                <button value={item}>{item}</button>
-                            </a>
-                            {this.state.subSecondMenuOpened && wrappedSecondSubMenu}
-                        </div>
-                    )
-            } else {
-                return(
-                    <a onClick={this.scrollToComponent} onMouseEnter={this.handleSubHover} className={className} key={index}>
-                        <button value={item}>{item}</button>
-                    </a>
-                )
-            }
-            });
-
-        let subSecondMenu = this.state.subSecondMenuItems.map((item,index)=> {
-            let className = this.isSmallDisplay() ? item.pathName + " menu-item small" : item.pathName + " menu-item";
-            return(
-                <a onClick={this.scrollToComponent} className={className} key={index}>
-                    <button value={item.pathName}>{item.linkName}</button>
-                </a>
-            )
-        });
-
-        let wrappedSubMenu = (
-            <div className="sub-menu">
-                {subMenu}
-            </div>
-        );
-
-        let wrappedSecondSubMenu = (
-            <div>
-                {subSecondMenu}
-            </div>
-        );
-
         let menuItems = this.state.items.map((item, index) => {
-            let className = this.isSmallDisplay() ? item + " menu-item small" : item + " menu-item";
+            let className = this.isSmallDisplay() ? item.name + " menu-item small" : item.name + " menu-item";
 
-            if (item === "blog" || item === "login" || item === "pricing" || item === "careers") {
+            if (item.name === "blog" || item.name === "login" || item.name === "pricing" || item.name === "careers") {
                 return (
                     <a onClick={this.scrollToComponent} className={className} key={index}>
-                        <button value={item}>{item}</button>
+                        <button value={item.path}>{item.name}</button>
                     </a>
                 )
-            } else if(item === "technology"){
+            } else if(item.name === "technology"){
+                const { subItems } = this.state.items[index];
+
+
+                let subMenu = subItems.map((subItem, subIndex)=>{
+                    if (subItem.name === "packages") {
+                        let packagesMenu = subItem.subItems.map((packageSubItem, packageItemIndex)=>{
+                            return (
+                                <a onClick={this.scrollToComponent} className={className + ' sub-menu-item'} key={packageItemIndex}>
+                                    <button value={packageSubItem.path}>{packageSubItem.name}</button>
+                                </a>
+                            )
+                        });
+
+                        let wrappedPackagesMenu = (<div onMouseLeave={this.handleHover.bind(this, subItem, subIndex)}>{packagesMenu}</div>);
+                        return (
+                            <div onMouseEnter={this.handleHover.bind(this, subItem, subIndex)} className={className + ' sub-menu-item'} key={subIndex}>
+                                <a onClick={this.scrollToComponent} className={className + 'sub-menu-item'}>
+                                    <button value={subItem.path}>{subItem.name} -></button>
+                                </a>
+                                {subItem.isOpened ? wrappedPackagesMenu : null}
+                            </div>
+                        )
+                    } else {
+                        return (
+                            <a onClick={this.scrollToComponent} className={className + ' sub-menu-item'} key={subIndex}>
+                                <button value={subItem.path}>{subItem.name}</button>
+                            </a>
+                        )
+                    }
+                });
+
+                let wrappedSubMenu = (<div onMouseLeave={this.handleHover.bind(this, item, index)} className={'sub-menu sub-menu-opened'}>{subMenu}</div>);
+
                 return (
-                    <div onMouseLeave={this.handleLeave}>
-                        <a onMouseEnter={this.handleHover} className={className} key={index}>
-                            <button value={item}>{item}</button>
-                        </a>
-                        {this.state.subMenuOpened && wrappedSubMenu}
+                    <div onMouseEnter={this.handleHover.bind(this, item, index)} className={className} key={index}>
+                        <button value={item.name}>{item.name}</button>
+                        {item.isOpened ? wrappedSubMenu : null}
                     </div>
                 )
 
             } else {
 
                 return (
-                    <a href={item} onClick={this.scrollToComponent} className={className}
+                    <a href={item.name} onClick={this.scrollToComponent} className={className}
                        key={index}>
-                        <button value={item}>{item}</button>
+                        <button value={item.name}>{item.name}</button>
                     </a>
                 )
             }

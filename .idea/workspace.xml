@@ -7,21 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c370bb6-1ed0-49b9-976d-171e98609bd4" name="Default" comment="privacy policy add /style fixes / routing">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AdvertisersMediaBuyers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AdvertisersMediaBuyers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BillboardOwners.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BillboardOwners.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Careers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Careers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EventPlanners.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EventPlanners.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Packages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Packages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SmallBusinessOwners.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SmallBusinessOwners.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SmartCities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SmartCities.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/careers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/careers.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/landing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/landing.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/packages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/packages.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.common.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,89 +23,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Header.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Header.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2958">
-              <caret line="175" column="18" selection-start-line="175" selection-start-column="18" selection-end-line="180" selection-end-column="26" />
+            <state relative-caret-position="442">
+              <caret line="110" column="82" selection-start-line="110" selection-start-column="82" selection-end-line="110" selection-end-column="82" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Careers.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Careers.js">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="careers.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scss/components/careers.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="landing.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/scss/components/landing.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Packages.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Packages.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1411">
-              <caret line="89" column="91" selection-start-line="89" selection-start-column="91" selection-end-line="89" selection-end-column="91" />
+            <state relative-caret-position="497">
+              <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="packages.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scss/components/packages.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1445">
-              <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Technology.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Technology.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="6" selection-start-line="5" selection-start-column="4" selection-end-line="12" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="technology.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scss/components/technology.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Product.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -125,8 +47,8 @@
       <file leaf-file-name="header.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/components/header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4131">
-              <caret line="243" column="1" selection-start-line="243" selection-start-column="1" selection-end-line="243" selection-end-column="9" />
+            <state relative-caret-position="378">
+              <caret line="263" column="14" selection-start-line="263" selection-start-column="14" selection-end-line="263" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -142,7 +64,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>analytics</find>
       <find>post-list</find>
       <find>post</find>
       <find>text</find>
@@ -172,6 +93,7 @@
       <find>post-article</find>
       <find>2030</find>
       <find>technology</find>
+      <find>value</find>
     </findStrings>
     <replaceStrings>
       <replace>contentEncoded</replace>
@@ -209,7 +131,6 @@
         <option value="$PROJECT_DIR$/src/scss/components/policy.scss" />
         <option value="$PROJECT_DIR$/src/components/Footer.js" />
         <option value="$PROJECT_DIR$/src/scss/components/footer.scss" />
-        <option value="$PROJECT_DIR$/webpack.config.common.js" />
         <option value="$PROJECT_DIR$/src/components/Blog/Blog.js" />
         <option value="$PROJECT_DIR$/src/components/Blog/Post.js" />
         <option value="$PROJECT_DIR$/src/components/PrivacyPolicy.js" />
@@ -221,7 +142,6 @@
         <option value="$PROJECT_DIR$/src/components/About.js" />
         <option value="$PROJECT_DIR$/src/components/Landing.js" />
         <option value="$PROJECT_DIR$/src/scss/components/contact.scss" />
-        <option value="$PROJECT_DIR$/src/scss/components/header.scss" />
         <option value="$PROJECT_DIR$/src/scss/components/SalesButton.scss" />
         <option value="$PROJECT_DIR$/src/components/Technology.js" />
         <option value="$PROJECT_DIR$/src/components/SalesButton.js" />
@@ -238,10 +158,12 @@
         <option value="$PROJECT_DIR$/src/components/BillboardOwners.js" />
         <option value="$PROJECT_DIR$/src/scss/components/packages.scss" />
         <option value="$PROJECT_DIR$/src/components/Packages.js" />
-        <option value="$PROJECT_DIR$/src/components/Header.js" />
         <option value="$PROJECT_DIR$/src/scss/components/careers.scss" />
         <option value="$PROJECT_DIR$/src/components/Careers.js" />
         <option value="$PROJECT_DIR$/src/scss/components/landing.scss" />
+        <option value="$PROJECT_DIR$/webpack.config.common.js" />
+        <option value="$PROJECT_DIR$/src/scss/components/header.scss" />
+        <option value="$PROJECT_DIR$/src/components/Header.js" />
       </list>
     </option>
   </component>
@@ -269,10 +191,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1939" />
-    <option name="height" value="1099" />
+    <option name="x" value="185" />
+    <option name="width" value="1190" />
+    <option name="height" value="999" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -282,7 +203,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -295,43 +215,18 @@
               <item name="abraxas" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="abraxas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="abraxas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="abraxas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="abraxas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="abraxas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="abraxas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="abraxas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="abraxas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="9.8.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../retailsmart-pos-fe" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -476,31 +371,43 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159681000" />
+    <option name="totallyTimeSpent" value="165175000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.72938687" visible="true" weight="0.19828156" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.729927" visible="true" weight="0.15761729" />
       <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="1" weight="0.26906317" />
-      <window_info anchor="bottom" id="Run" order="5" visible="true" weight="0.32621083" />
-      <window_info id="npm" order="0" sideWeight="0.2706131" side_tool="true" visible="true" weight="0.19828156" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.24890351" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.26754385" />
+      <window_info id="npm" order="0" sideWeight="0.270073" side_tool="true" visible="true" weight="0.15761729" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.18736383" />
-      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.18640351" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info id="npm" order="0" sideWeight="0.2706131" side_tool="true" visible="true" weight="0.19828156" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.72938687" visible="true" weight="0.19828156" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.26906317" />
+      <window_info anchor="bottom" id="Run" order="5" visible="true" weight="0.32621083" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.18736383" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info id="Favorites" order="1" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,13 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -734,16 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -835,23 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1411">
           <caret line="89" column="91" selection-start-line="89" selection-start-column="91" selection-end-line="89" selection-end-column="91" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/components/header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4131">
-          <caret line="243" column="1" selection-start-line="243" selection-start-column="1" selection-end-line="243" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2958">
-          <caret line="175" column="18" selection-start-line="175" selection-start-column="18" selection-end-line="180" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -873,6 +746,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/components/header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="263" column="14" selection-start-line="263" selection-start-column="14" selection-end-line="263" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="110" column="82" selection-start-line="110" selection-start-column="82" selection-end-line="110" selection-end-column="82" />
         </state>
       </provider>
     </entry>
