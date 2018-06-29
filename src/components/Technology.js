@@ -1,4 +1,5 @@
 import React from 'react';
+import SalesButton from "./SalesButton";
 
 class Technology extends React.Component {
 
@@ -13,7 +14,9 @@ class Technology extends React.Component {
 
     render() {
         return (
+
             <div className="technology-main"  id="technology">
+            <SalesButton ref="sales-button"/>
                 <div className="technology-scout">
                     <div className="technology-scout-text">
                         <h1>What is ABRAXAS Technology?</h1>

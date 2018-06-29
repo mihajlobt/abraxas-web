@@ -36,7 +36,7 @@
 }
 
 .post-article {
-  max-width: 800px;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -62,7 +62,7 @@
 
 @media only screen and (min-width: 768px){
   .post-article {
-    padding: 80px;
+    padding: 40px;
   }
 
 }
@@ -72,6 +72,9 @@
   .post-content {
     max-width: 280px;
   }
+.post-article img {
+  max-width: 300px;
+}
 }
 
 .post-preview {
