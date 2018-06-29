@@ -4,6 +4,7 @@ class EventPlanners extends React.Component{
 
     render() {
         return (
+            <div className="packages-main">
             <div id="event-planners" className="packages-scout">
                 <div className="packages-scout-text">
                     <h2>Event Planners</h2>
@@ -72,7 +73,7 @@ class EventPlanners extends React.Component{
                 </div>
 
             </div>
-
+            </div>
 
         )
     }

@@ -4,6 +4,7 @@ class SmartCities extends React.Component{
 
     render() {
         return (
+            <div className="packages-main">
             <div id="smart-cities" className="packages-scout">
                 <div className="packages-scout-text">
                     <h2>Smart Cities</h2>
@@ -71,6 +72,7 @@ class SmartCities extends React.Component{
 
                 </div>
 
+            </div>
             </div>
 
         )

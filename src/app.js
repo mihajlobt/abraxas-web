@@ -20,6 +20,7 @@ import Careers from "./components/Careers";
 import SaaSTermsConditions from "./components/SaaSTermsConditions";
 
 import Product from "./components/Product";
+import Packages from "./components/Packages";
 import EventPlanners from "./components/EventPlanners";
 import SmartCities from "./components/SmartCities";
 import AdvertisersMediaBuyers from "./components/AdvertisersMediaBuyers";
@@ -54,6 +55,7 @@ const renderApplication = () => {
                     <Route path ="/careers" component={Careers}/>
                     <Route path = "/SaaSTerms_Conditions" component={SaaSTermsConditions}/>
                     <Route path ="/product" component={Product}/>
+                    <Route path ="/packages" component={Packages} />
                     <Route path ="/advertisers-media-buyers" component={AdvertisersMediaBuyers} />
                     <Route path ="/billboard-owners" component={BillboardOwners} />
                     <Route path ="/event-planners" component ={EventPlanners} />

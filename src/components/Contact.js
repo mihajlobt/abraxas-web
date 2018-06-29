@@ -43,18 +43,15 @@ class Contact extends React.Component {
                                 <input required id="email" type="email" />
                             </div>
                             <div className="form-section">
-                                <label htmlFor="type">I am a</label>
-                                <select defaultChecked={'OWNER'}>
-                                    <option>OWNER</option>
-                                    <option>ADVERTISER</option>
-                                </select>
+                                <label htmlFor="company">Company</label>
+                                <input id="company" required />
                             </div>
                         </div>
                     </div>
                     <div className="form-column">
                         <div className="form-section">
-                            <label htmlFor="location">Location</label>
-                            <input required id="location"/>
+                            <label htmlFor="subject">Subject</label>
+                            <input required id="subject"/>
                         </div>
                         <div required className="form-section">
                             <label htmlFor="message">Message</label>

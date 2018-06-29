@@ -4,6 +4,7 @@ class SmallBusinessOwners extends React.Component{
 
     render() {
         return (
+            <div className="packages-main">
             <div id="small-business-owners" className="packages-scout">
                 <div className="packages-scout-text">
                     <h2>Small Business Owners</h2>
@@ -73,6 +74,7 @@ class SmallBusinessOwners extends React.Component{
 
                 </div>
 
+            </div>
             </div>
 
         )

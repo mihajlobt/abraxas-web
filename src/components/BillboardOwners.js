@@ -4,6 +4,7 @@ class BillboardOwners extends React.Component{
 
     render() {
         return (
+            <div className="packages-main">
             <div id="billboard-owners" className="packages-scout">
                 <div className="packages-scout-text">
                     <h2>Billboard Owners</h2>
@@ -71,6 +72,7 @@ class BillboardOwners extends React.Component{
 
                 </div>
 
+            </div>
             </div>
 
 

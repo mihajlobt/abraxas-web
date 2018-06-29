@@ -13,16 +13,57 @@ class Header extends React.Component {
             items: [
                 "home",
                 "technology",
-                "pricing",
                 "about",
                 "careers",
                 "contact",
                 "blog",
                 "login",
             ],
+            subMenuItems : [
+                "product",
+                "packages"
+            ],
+            subSecondMenuItems :[
+                {
+                    pathName:"advertisers-media-buyers",
+                    linkName : "Advertisers / Media Buyers"
+                },
+                {
+                    pathName:"billboard-owners",
+                    linkName : "Billboard Owners"
+                },
+                {
+                    pathName:"event-planners",
+                    linkName : "Event Planners"
+                },
+                {
+                    pathName:"small-business-owners",
+                    linkName : "Small Business Owners"
+                },
+                {
+                    pathName:"smart-cities",
+                    linkName : "Smart Cities"
+                }
+                ],
+            subMenuOpened : false,
+            subSecondMenuOpened:false,
         }
     }
 
+    handleHover = () => {
+        this.setState({ subMenuOpened : true });
+    };
+    handleSubHover = () => {
+        this.setState({ subSecondMenuOpened: true });
+    };
+
+    handleLeave = () => {
+        this.setState({ subMenuOpened : false });
+    };
+
+    handleSubLeave = () => {
+        this.setState({ subSecondMenuOpened: false });
+    };
     isSmallDisplay = () => {
         return window.innerWidth <= 768;
     };
@@ -46,7 +87,7 @@ class Header extends React.Component {
 
     scrollToComponent = e => {
         const view = e.target.value;
-        if (view !== "login" && view !== "blog" && view !== "terms" && view !== "technology" && view !== "pricing" && view!=="careers") {
+        if (view !== "login" && view !== "blog" && view !== "terms" && view !== "technology"  && view!=="careers" && view !== "packages" && view !== "product" && view !== "advertisers-media-buyers" && view!== "billboard-owners" && view!== "event-planners" && view !== "small-business-owners" && view!== "smart-cities") {
             this.state.componentIntoView = view;
             e.preventDefault();
             /*this.props.history.replace("/");
@@ -79,15 +120,67 @@ class Header extends React.Component {
 
 
     render() {
+
+        let subMenu = this.state.subMenuItems.map((item,index)=> {
+            let className = this.isSmallDisplay() ? item + " menu-item small" : item + " menu-item";
+            if( item === "packages"){
+                    return (
+                        <div onMouseLeave={this.handleSubLeave}>
+                            <a  onMouseEnter={this.handleSubHover} onClick={this.scrollToComponent} className={className} key={index}>
+                                <button value={item}>{item}</button>
+                            </a>
+                            {this.state.subSecondMenuOpened && wrappedSecondSubMenu}
+                        </div>
+                    )
+            } else {
+                return(
+                    <a onClick={this.scrollToComponent} onMouseEnter={this.handleSubHover} className={className} key={index}>
+                        <button value={item}>{item}</button>
+                    </a>
+                )
+            }
+            });
+
+        let subSecondMenu = this.state.subSecondMenuItems.map((item,index)=> {
+            let className = this.isSmallDisplay() ? item.pathName + " menu-item small" : item.pathName + " menu-item";
+            return(
+                <a onClick={this.scrollToComponent} className={className} key={index}>
+                    <button value={item.pathName}>{item.linkName}</button>
+                </a>
+            )
+        });
+
+        let wrappedSubMenu = (
+            <div className="sub-menu">
+                {subMenu}
+            </div>
+        );
+
+        let wrappedSecondSubMenu = (
+            <div>
+                {subSecondMenu}
+            </div>
+        );
+
         let menuItems = this.state.items.map((item, index) => {
             let className = this.isSmallDisplay() ? item + " menu-item small" : item + " menu-item";
 
-            if (item === "blog" || item === "login" || item === "technology" || item === "pricing" || item === "careers") {
+            if (item === "blog" || item === "login" || item === "pricing" || item === "careers") {
                 return (
                     <a onClick={this.scrollToComponent} className={className} key={index}>
                         <button value={item}>{item}</button>
                     </a>
                 )
+            } else if(item === "technology"){
+                return (
+                    <div onMouseLeave={this.handleLeave}>
+                        <a onMouseEnter={this.handleHover} className={className} key={index}>
+                            <button value={item}>{item}</button>
+                        </a>
+                        {this.state.subMenuOpened && wrappedSubMenu}
+                    </div>
+                )
+
             } else {
 
                 return (

@@ -11,7 +11,7 @@
 
   .landing-text {
     text-shadow: 0 2px #000;
-    top: 70px;
+    top: 10px;
     position: absolute;
     max-width: 650px;
     color: #f8f8f8;
@@ -25,6 +25,7 @@
       font-size: 30px;
       line-height: 56px;
       z-index: 8;
+      top: 65px;
     }
 
     .landing-background {

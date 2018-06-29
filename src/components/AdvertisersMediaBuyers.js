@@ -4,6 +4,7 @@ class AdvertisersMediaBuyers extends React.Component{
 
     render() {
         return (
+            <div className="packages-main">
             <div id="advertisers-media-buyers" className="packages-scout">
                 <div className="packages-scout-text">
                     <h2>Advertisers/Media Buyers</h2>
@@ -65,6 +66,7 @@ class AdvertisersMediaBuyers extends React.Component{
 
                 </div>
 
+            </div>
             </div>
 
         )
