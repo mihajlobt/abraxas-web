@@ -74,17 +74,13 @@
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
+  opacity: 1;
   transition: .5s ease;
   background-color: rgba(10, 10, 10, 0.54);
-}
-
-
-
-.packages-container:hover .overlay-packages {
-  opacity: 1;
   cursor: pointer;
 }
+
+
 
 .packages-watermark {
   color: #f8f8f8;
@@ -101,7 +97,7 @@
 
 .packages-container {
   position: relative;
-  width: 50%;
+  max-width: 450px;
   margin: 10px;
 }
 
@@ -111,4 +107,19 @@
   margin: auto;
   justify-content: center;
   max-width: 1450px;
+}
+
+.demo-btn{
+  cursor: pointer;
+  margin: 1.22em;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  background-color: #781215;
+  color: #f8f8f8;
+  border: 0;
+  border-bottom: 3px solid;
+  border-radius: 0.35em;
+  border-color: #410b0d;
 }

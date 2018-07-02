@@ -11,7 +11,7 @@ class Header extends React.Component {
             items: [
                 {name: "home", path: "home"},
                 {name: "technology", path: "technology", isOpened: false, subItems: [
-                        {name: "pricing", path: "pricing"},
+                        {name: "product", path: "product"},
                         {name: "packages", path: "packages", isOpened: false, subItems: [
                                 {name: "Advertisers/Media Buyers", path: "advertisers-media-buyers"},
                                 {name: "Billboard Owners", path: "billboard-owners"},

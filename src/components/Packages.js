@@ -51,7 +51,7 @@ class Packages extends React.Component{
                <h1>Packages</h1>
                 <div className="packages-section-images">
 
-
+                <div className="packages-column">
                     <div className="packages-container">
                         <img src={advertisermediabuyers}  className="packages-image"  />
 
@@ -59,23 +59,26 @@ class Packages extends React.Component{
                                 <div className="packages-watermark" > Advertisers / Media Buyers</div>
                             </div>
                     </div>
+                    <div className="packages-container">
+                        <img src={eventplanner} className="packages-image"  />
+                        <div className="overlay-packages" onClick={this.scrollToEventPlanners}>
+                            <div className="packages-watermark">Event Planners</div>
+                        </div>
+                    </div>
+                </div>
 
-
+                <div className="packages-column">
                     <div className="packages-container">
                         <img src={billboard}  className="packages-image"  />
                             <div className="overlay-packages" onClick={this.scrollToBillboardOwners}>
                                 <div className="packages-watermark">Billboard Owners</div>
                             </div>
                     </div>
+                </div>
 
 
-                    <div className="packages-container">
-                        <img src={eventplanner} className="packages-image"  />
-                        <div className="overlay-packages" onClick={this.scrollToEventPlanners}>
-                                <div className="packages-watermark">Event Planners</div>
-                            </div>
-                    </div>
 
+                <div className="packages-column">
 
                     <div className="packages-container">
                         <img src={smallbusiness} className="packages-image" />
@@ -91,6 +94,7 @@ class Packages extends React.Component{
                                 <div className="packages-watermark">Smart Cities</div>
                             </div>
                     </div>
+                </div>
 
                  </div>
            </div>

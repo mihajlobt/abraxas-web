@@ -2,6 +2,14 @@ import React from 'react';
 
 class EventPlanners extends React.Component{
 
+    constructor(props){
+        super(props);
+    }
+
+    scrollToContact = e => {
+        e.preventDefault();
+        this.props.history.replace("/#contact");
+    };
     render() {
         return (
             <div className="packages-main">
@@ -65,7 +73,7 @@ class EventPlanners extends React.Component{
                             </li>
                         </ul>
                     </span>
-
+                    <button href="/#contact" onClick={this.scrollToContact} className="demo-btn">Request a Demo</button>
 
 
                     <div className="event-illustration"></div>

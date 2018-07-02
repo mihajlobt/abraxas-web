@@ -1,6 +1,14 @@
 import React from 'react';
 
 class AdvertisersMediaBuyers extends React.Component{
+    constructor(props){
+        super(props);
+    }
+
+    scrollToContact = e => {
+        e.preventDefault();
+        this.props.history.replace("/#contact");
+    };
 
     render() {
         return (
@@ -60,7 +68,7 @@ class AdvertisersMediaBuyers extends React.Component{
                         </ul>
                     </span>
 
-
+                    <button href="/#contact" onClick={this.scrollToContact} className="demo-btn">Request a Demo</button>
 
                     <div className="packages-illustration"></div>
 

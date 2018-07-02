@@ -1,6 +1,14 @@
 import React from 'react';
 
 class SmallBusinessOwners extends React.Component{
+    constructor(props){
+        super(props);
+    }
+
+    scrollToContact = e => {
+        e.preventDefault();
+        this.props.history.replace("/#contact");
+    };
 
     render() {
         return (
@@ -69,7 +77,7 @@ class SmallBusinessOwners extends React.Component{
                     </span>
 
 
-
+                    <button href="/#contact" onClick={this.scrollToContact} className="demo-btn">Request a Demo</button>
                     <div className="business-illustration"></div>
 
                 </div>
