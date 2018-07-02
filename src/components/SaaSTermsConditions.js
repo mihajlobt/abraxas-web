@@ -22,15 +22,12 @@ class SaaSTermsConditions extends React.Component {
                             and neither portion of this Agreement is intended to exist without the other portion.
                         </p>
                         <p>
-                            This document is separated into two parts to save paper, and provide clarity on key business
-                            terms between Abraxas and Customer
-                            in easier to read documents. Customers must read and consent to these terms and conditions
-                            before conducting business with Abraxas.
-                            In the event that key business terms are presented separately to any customer, such document
-                            shall direct Customer to read this document.
-                            If you do not explicitly object, in writing, to any of the terms published here, Abraxas
-                            will assume that you have read and consent to all
-                            terms and conditions as set forth below.
+                            This document is separated into two parts to save paper, and provide clarity on key
+                            business terms and important legal terms between Abraxas and Customer in easier to read documents.
+                            Customers must read and consent to these terms and conditions before conducting business with Abraxas.
+                            In the event that key business terms are presented separately to any customer, such document shall direct
+                            Customer to read this document.  If you do not explicitly object, in writing, to any of the terms published here,
+                            Abraxas will assume that you have read and consent to all terms and conditions as set forth below.
                         </p>
                     </div>
                     <div className="saas-section">
@@ -43,9 +40,7 @@ class SaaSTermsConditions extends React.Component {
                             </p>
 
                             <p>
-                                <b>”Action”</b> means any claim, action, cause of action, demand, lawsuit, arbitration, inquiry, audit, notice of
-                                violation, proceeding, litigation, citation, summons, subpoena or investigation of any nature, civil, criminal,
-                                administrative, regulatory or other, whether at law, in equity, or otherwise.
+                                <b>”Action”</b> means any claim, action, cause of action, demand, lawsuit, arbitration, inquiry, audit, notice of violation, proceeding, litigation, citation, summons, subpoena or investigation of any nature, civil, criminal, administrative, regulatory or other, whether at law, in equity, or otherwise.
                             </p>
 
                             <p>

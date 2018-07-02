@@ -9,7 +9,7 @@ class Careers extends React.Component {
                     <h1>CAREERS</h1>
                     <div className="careers-section">
 
-                        <h2>Business Development Associate (entry level)</h2>
+                        <h2>Sales Development Representative (SDR).</h2>
                         <p>
                             In a town like Austin, with a slogan of “Keeping it Weird”, it’s hard to go anywhere that is not
                             filled with hungry people. Nobody is hungrier or more motivated than us at Abraxas Technology. We love
@@ -45,6 +45,9 @@ class Careers extends React.Component {
                             <li>Keep abreast of best practices and promotional trends,</li>
                             <li>Continuously improve through feedback.</li>
                         </ul>
+
+                        <p>Please send your application to Joshua Lawton at <a href="mailto:JLawton@abraxastechnology.com"> jlawton@abraxastechnology.com. </a></p>
+
                         <p>
                             <em><b>Abraxas Technology is committed to the principle of equal employment opportunity for all employees
                             and to providing employees with a work environment free of discrimination and harassment. All employment

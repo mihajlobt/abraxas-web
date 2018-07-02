@@ -10,7 +10,7 @@ class Header extends React.Component {
             componentIntoView: null,
             items: [
                 {name: "home", path: "home"},
-                {name: "technology", path: "technology", isOpened: false, subItems: [
+                {name: "technology", path: "product", isOpened: false, subItems: [
                         {name: "product", path: "product"},
                         {name: "packages", path: "packages", isOpened: false, subItems: [
                                 {name: "Advertisers/Media Buyers", path: "advertisers-media-buyers"},
@@ -131,7 +131,7 @@ class Header extends React.Component {
                 let wrappedSubMenu = (<div onMouseLeave={this.handleHover.bind(this, item, index)} className={this.isSmallDisplay() ? 'sub-menu sub-menu-opened sub-menu-small' : 'sub-menu sub-menu-opened'}>{subMenu}</div>);
 
                 return (
-                    <div onClick={this.handleHover.bind(this, item, index)} onMouseEnter={!this.isSmallDisplay() ? this.handleHover.bind(this, item, index) : null} className={className} key={index}>
+                    <div onClick={this.scrollToComponent} onMouseEnter={!this.isSmallDisplay() ? this.handleHover.bind(this, item, index) : null} className={className} key={index}>
                         <button value={item.name}>{item.name}</button>
                         {item.isOpened ? wrappedSubMenu : null}
                     </div>

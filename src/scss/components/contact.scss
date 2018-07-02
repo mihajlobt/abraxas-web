@@ -9,12 +9,12 @@
   padding: 120px 0;
 
   .contact-header{
-    background: url('../images/contact.png') no-repeat center;
+
     width: 87%;
     height: 250px;
     background-size: cover;
      h1{
-       color: white;
+       color: black;
        font-size: 55px !important;
        padding-top: 50px;
        text-align: center;
@@ -126,6 +126,10 @@
 
     .contact-header{
       width: 130%;
+
+      h1{
+        font-size:45px  !important;
+      }
     }
   }
 }
