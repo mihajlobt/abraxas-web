@@ -33,6 +33,7 @@ class Blog extends React.Component {
                         <div className="flex-space-between">
                             <span className="post-title">{item.title}</span>
                             <div className='post-image-container'>
+
                             <img src={this.state.images[index].image} className='post-image'/>
                             </div>
                             <div className="post-author">
@@ -40,6 +41,7 @@ class Blog extends React.Component {
                                 <span>{item.pubDate.substr(0, 16)}</span>
                             </div>
                         </div>
+
                         <div className="post-content" dangerouslySetInnerHTML={{ __html: item.contentEncoded.replace(/\n/g, '<br />')}}></div>
                     </article>
                 </a>

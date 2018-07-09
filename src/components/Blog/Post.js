@@ -19,7 +19,9 @@ class Post extends React.Component {
                 <MetaTags>
                     <title>{item.title}</title>
                     <meta property="og:title" content={item.title} />
-                    <meta property="og:image" content={item.image} />
+                    <meta property="og:description" content="Abraxas Technology" />
+                    <meta property="og:site_name" content="Abraxas Technology" />
+
                 </MetaTags>
                 <div className="post-article">
                     <div>

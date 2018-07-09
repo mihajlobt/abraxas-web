@@ -19,7 +19,7 @@ class Product extends React.Component {
                         <h1>What is ABRAXAS Technology?</h1>
                         <h2>ABRAXAS Scout</h2>
                         <span>ABRAXAS Scout passively collects and aggregates each digital signature
-                            passing within the vicinity of the sign, allowing advertisers to see how
+                            passing within the vicinity of the sign,  allowing advertisers to see how
                             many people viewed the advertisement and when.
                         </span>
                         <div className="technology-illustration"></div>

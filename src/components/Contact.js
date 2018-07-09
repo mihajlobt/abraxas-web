@@ -10,6 +10,7 @@ class Contact extends React.Component {
                 </div>
                 <div className="contact-section">
                     <div className="left-contact">
+
                         <h2> HEADQUARTERS</h2>
                         <div className="contact-headquarters">
 
@@ -22,6 +23,7 @@ class Contact extends React.Component {
                         <p>(512) 525-8154</p>
                         <p> info@abraxastechnology.com  </p>
                         </div>
+                        
 
                     </div>
                     <div className="right-contact">

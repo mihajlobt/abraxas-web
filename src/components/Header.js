@@ -131,7 +131,7 @@ class Header extends React.Component {
                 let wrappedSubMenu = (<div onMouseLeave={this.handleHover.bind(this, item, index)} className={this.isSmallDisplay() ? 'sub-menu sub-menu-opened sub-menu-small' : 'sub-menu sub-menu-opened'}>{subMenu}</div>);
 
                 return (
-                    <div onClick={this.scrollToComponent} onMouseEnter={!this.isSmallDisplay() ? this.handleHover.bind(this, item, index) : null} className={className} key={index}>
+                    <div onClick={this.isSmallDisplay() ? this.handleHover.bind(this, item, index) : this.scrollToComponent} onMouseEnter={!this.isSmallDisplay() ? this.handleHover.bind(this, item, index) : null} className={className} key={index}>
                         <button value={item.name}>{item.name}</button>
                         {item.isOpened ? wrappedSubMenu : null}
                     </div>

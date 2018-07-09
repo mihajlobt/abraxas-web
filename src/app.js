@@ -2,6 +2,10 @@ import './scss/main.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-109461543-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 import Home from './components/Home';
 import Header from './components/Header';
 import Login from './components/Login';

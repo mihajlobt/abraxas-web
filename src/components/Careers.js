@@ -9,7 +9,7 @@ class Careers extends React.Component {
                     <h1>CAREERS</h1>
                     <div className="careers-section">
 
-                        <h2>Sales Development Representative (SDR).</h2>
+                        <h2>Sales Development Representative (SDR)</h2>
                         <p>
                             In a town like Austin, with a slogan of “Keeping it Weird”, it’s hard to go anywhere that is not
                             filled with hungry people. Nobody is hungrier or more motivated than us at Abraxas Technology. We love
