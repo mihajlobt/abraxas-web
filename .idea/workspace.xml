@@ -8,28 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3c370bb6-1ed0-49b9-976d-171e98609bd4" name="Default" comment="privacy policy add /style fixes / routing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AdvertisersMediaBuyers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AdvertisersMediaBuyers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BillboardOwners.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BillboardOwners.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/Blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/Post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog/Posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/Posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Careers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Careers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EventPlanners.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EventPlanners.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Packages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Packages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PrivacyPolicy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PrivacyPolicy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SaaSTermsConditions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SaaSTermsConditions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SmallBusinessOwners.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SmallBusinessOwners.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SmartCities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SmartCities.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Technology.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Technology.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TermsAndConditions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TermsAndConditions.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -76,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Packages.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Packages.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Packages.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
@@ -88,11 +67,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SaaSTermsConditions.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/SaaSTermsConditions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="507">
+              <caret line="886" column="44" selection-start-line="886" selection-start-column="44" selection-end-line="886" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Login.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
+              <caret line="19" column="5" selection-start-line="16" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -487,7 +478,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>privacy@abraxastechnology.com</find>
       <find>table</find>
       <find>terms-section</find>
       <find>scrollToComponent</find>
@@ -516,6 +506,8 @@
       <find>techn</find>
       <find>footer</find>
       <find>hash</find>
+      <find>class</find>
+      <find>class</find>
     </findStrings>
     <replaceStrings>
       <replace>contentEncoded</replace>
@@ -577,7 +569,6 @@
         <option value="$PROJECT_DIR$/src/components/Login.js" />
         <option value="$PROJECT_DIR$/src/components/PrivacyPolicy.js" />
         <option value="$PROJECT_DIR$/src/components/Product.js" />
-        <option value="$PROJECT_DIR$/src/components/SaaSTermsConditions.js" />
         <option value="$PROJECT_DIR$/src/components/SmallBusinessOwners.js" />
         <option value="$PROJECT_DIR$/src/components/SmartCities.js" />
         <option value="$PROJECT_DIR$/src/components/Technology.js" />
@@ -586,6 +577,7 @@
         <option value="$PROJECT_DIR$/src/components/Blog/Blog.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/components/Packages.js" />
+        <option value="$PROJECT_DIR$/src/components/SaaSTermsConditions.js" />
       </list>
     </option>
   </component>
@@ -612,11 +604,11 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1098" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1947" />
+    <option name="y" value="-92" />
+    <option name="width" value="1934" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -819,25 +811,25 @@
       <workItem from="1530888585874" duration="53000" />
       <workItem from="1531130288603" duration="1764000" />
       <workItem from="1531148499821" duration="3379000" />
-      <workItem from="1531213563361" duration="6276000" />
+      <workItem from="1531213563361" duration="11680000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200971000" />
+    <option name="totallyTimeSpent" value="206375000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-1928" y="-152" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.26780626" />
-      <window_info anchor="bottom" id="Run" order="5" visible="true" weight="0.43874645" />
-      <window_info id="npm" order="0" sideWeight="0.29187816" side_tool="true" visible="true" weight="0.15730338" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.26780626" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.70812184" visible="true" weight="0.15730338" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.43874645" />
+      <window_info id="npm" order="0" sideWeight="0.29041097" side_tool="true" visible="true" weight="0.12539515" />
+      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.20479302" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.70958906" visible="true" weight="0.12539515" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32897604" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
@@ -1137,16 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SaaSTermsConditions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -1593,7 +1575,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/Login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
+          <caret line="19" column="5" selection-start-line="16" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -1604,6 +1586,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SaaSTermsConditions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="886" column="44" selection-start-line="886" selection-start-column="44" selection-end-line="886" selection-end-column="44" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
