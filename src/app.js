@@ -2,9 +2,7 @@ import './scss/main.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import ReactGA from 'react-ga';
-ReactGA.initialize('UA-109461543-1');
-ReactGA.pageview(window.location.pathname + window.location.search);
+
 
 import Home from './components/Home';
 import Header from './components/Header';
@@ -16,6 +14,7 @@ import Posts from './components/Blog/Posts';
 import Post from './components/Blog/Post';
 
 import {BrowserRouter as Router, Route, Switch, HashRouter} from 'react-router-dom';
+import browserHistory from 'react-router';
 import TermsAndConditions from "./components/TermsAndConditions";
 import PrivacyPolicy from './components/PrivacyPolicy';
 import Pricing from "./components/Pricing";
@@ -42,13 +41,16 @@ const renderApplication = () => {
         )
     });
 
+
+
+
     ReactDOM.render(
         <HashRouter>
             <div className="main-component-wrapper">
                 <Route path="*" component={Header}/>
                 <Route exact path="/" component={Home}/>
                 <Switch>
-                    <Route exact path="/home" component={Home}/>
+                    <Route exact path="/home" component={Home} />
                     <Route path="/blog" component={Blog}/>
                     <Route path="/pricing" component={Pricing}/>
                     <Route path="/technology" component={Technology}/>

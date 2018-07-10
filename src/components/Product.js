@@ -1,9 +1,25 @@
 import React from 'react';
+import {Helmet} from 'react-helmet';
+import ReactGA from 'react-ga';
+
+export const initGA = () => {
+    console.log('GA init')
+    ReactGA.initialize('UA-109461543-1')
+}
+
+export const logPageView = () => {
+    ReactGA.set({page : window.location.pathname})
+    ReactGA.pageview(window.location.pathname)
+}
 
 class Product extends React.Component {
 
     constructor(props){
         super(props);
+    }
+    componentDidMount(){
+        initGA();
+        logPageView();
     }
 
     scrollToContact = e => {
@@ -14,6 +30,11 @@ class Product extends React.Component {
     render() {
         return (
             <div className="technology-main"  id="technology">
+                <Helmet>
+                    <title>
+                        Product
+                    </title>
+                </Helmet>
                 <div className="technology-scout">
                     <div className="technology-scout-text">
                         <h1>What is ABRAXAS Technology?</h1>

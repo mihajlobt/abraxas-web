@@ -1,10 +1,32 @@
 import React from 'react';
 import Footer from "./Footer";
+import {Helmet} from 'react-helmet';
+import ReactGA from 'react-ga';
+
+export const initGA = () => {
+    console.log('GA init')
+    ReactGA.initialize('UA-109461543-1')
+}
+
+export const logPageView = () => {
+    ReactGA.set({page : window.location.pathname})
+    ReactGA.pageview(window.location.pathname)
+}
+
 
 class SaaSTermsConditions extends React.Component {
+    componentDidMount(){
+        initGA();
+        logPageView();
+    }
     render() {
         return (
             <div className="main-container">
+                <Helmet>
+                <title>
+                    SaaS Terms and Conditions
+                </title>
+                </Helmet>
                 <div className="saas-terms-conditions">
                     <h1>SaaS Terms and Conditions</h1>
                     <div className="saas-section">

@@ -1,10 +1,32 @@
 import React from 'react';
 import Footer from "./Footer";
+import ReactGA from 'react-ga';
+import {Helmet} from 'react-helmet';
+
+export const initGA = () => {
+    console.log('GA init')
+    ReactGA.initialize('UA-109461543-1')
+}
+
+export const logPageView = () => {
+    ReactGA.set({page : window.location.pathname})
+    ReactGA.pageview(window.location.pathname)
+}
+
 
 class Careers extends React.Component {
+    componentDidMount(){
+        initGA()
+        logPageView()
+    }
     render() {
         return (
             <div className="main-container">
+                <Helmet >
+                    <title>
+                        Careers
+                    </title>
+                </Helmet>
                 <div className="careers-container">
                     <h1>CAREERS</h1>
                     <div className="careers-section">

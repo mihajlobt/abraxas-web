@@ -1,9 +1,25 @@
 import React from 'react';
+import ReactGA from 'react-ga';
+import {Helmet} from 'react-helmet';
+
+export const initGA = () => {
+    console.log('GA init')
+    ReactGA.initialize('UA-109461543-1')
+}
+
+export const logPageView = () => {
+    ReactGA.set({page : window.location.pathname})
+    ReactGA.pageview(window.location.pathname)
+}
 
 class EventPlanners extends React.Component{
 
     constructor(props){
         super(props);
+    }
+    componentDidMount(){
+        initGA();
+        logPageView();
     }
 
     scrollToContact = e => {
@@ -13,6 +29,11 @@ class EventPlanners extends React.Component{
     render() {
         return (
             <div className="packages-main">
+                <Helmet >
+                    <title>
+                        Event Planners
+                    </title>
+                </Helmet>
             <div id="event-planners" className="packages-scout">
                 <div className="packages-scout-text">
                     <h2>Event Planners</h2>

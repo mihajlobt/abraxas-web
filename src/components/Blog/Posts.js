@@ -183,6 +183,7 @@ const Posts = () => {
                 "title": "Top OOH Trends of 2017 Are In and You Can Probably Guess Why Were Excited",
                 "link": "http://abraxastechnology.com/top-ooh-trends-of-2017-are-in-and-you-can-probably-guess-why-were-excited",
                 "image": infographicBlog,
+                "imagePath": "images/ABRAXAS-Infographic-blog.png",
                 "pubDate": "Tue, 09 Jan 2018 18:35:47 +0000",
                 "dcCreator": "Joshua Lawton",
                 "guid": {

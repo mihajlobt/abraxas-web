@@ -7,6 +7,7 @@ import bradley from '../images/Bradley.png';
 import aaron from '../images/Aaron.png';
 
 
+
 class About extends React.Component {
 
     constructor(props) {

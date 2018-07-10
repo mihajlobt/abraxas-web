@@ -5,12 +5,29 @@ import billboard from '../images/Billboard Owners.jpg';
 import eventplanner from '../images/EventPlanner.jpg';
 import smallbusiness from '../images/SmallBusinessOwner.jpg';
 import smartcities from '../images/SmartCities.jpg';
+import {Helmet} from 'react-helmet';
+import ReactGA from 'react-ga';
+
+export const initGA = () => {
+    console.log('GA init')
+    ReactGA.initialize('UA-109461543-1')
+}
+
+export const logPageView = () => {
+    ReactGA.set({page : window.location.pathname})
+    ReactGA.pageview(window.location.pathname)
+}
 
 
 class Packages extends React.Component{
 
     constructor(props){
         super(props);
+    }
+
+    componentDidMount(){
+        initGA();
+        logPageView();
     }
 
     scrollToAdvertisers = e => {
@@ -47,6 +64,11 @@ class Packages extends React.Component{
 
         return (
             <div className="packages-main">
+                <Helmet>
+                    <title>
+                        Packages
+                    </title>
+                </Helmet>
            <div className="packages-scout">
                <h1>Packages</h1>
                 <div className="packages-section-images">

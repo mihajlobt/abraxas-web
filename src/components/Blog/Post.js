@@ -1,9 +1,24 @@
 import React from 'react';
 import MetaTags from 'react-meta-tags';
+import {Helmet} from 'react-helmet';
+import ReactGA from 'react-ga';
+
+export const initGA = () => {
+    console.log('GA init')
+    ReactGA.initialize('UA-109461543-1')
+}
+
+export const logPageView = () => {
+    ReactGA.set({page : window.location.pathname})
+    ReactGA.pageview(window.location.pathname)
+}
 
 
 class Post extends React.Component {
-
+    componentDidMount(){
+        initGA();
+        logPageView();
+    }
     constructor(props){
         super(props)
     }
@@ -16,13 +31,9 @@ class Post extends React.Component {
 
         return(
             <div className="main-container">
-                <MetaTags>
-                    <title>{item.title}</title>
-                    <meta property="og:title" content={item.title} />
-                    <meta property="og:description" content="Abraxas Technology" />
-                    <meta property="og:site_name" content="Abraxas Technology" />
-
-                </MetaTags>
+                <Helmet>
+                <title>{item.title}</title>
+                </Helmet>
                 <div className="post-article">
                     <div>
                         <h1>{item.title}</h1>

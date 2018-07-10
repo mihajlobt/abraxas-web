@@ -1,8 +1,24 @@
 import React from 'react';
+import {Helmet} from 'react-helmet';
+import ReactGA from 'react-ga';
+
+export const initGA = () => {
+    console.log('GA init')
+    ReactGA.initialize('UA-109461543-1')
+}
+
+export const logPageView = () => {
+    ReactGA.set({page : window.location.pathname})
+    ReactGA.pageview(window.location.pathname)
+}
 
 class SmallBusinessOwners extends React.Component{
     constructor(props){
         super(props);
+    }
+    componentDidMount(){
+        initGA();
+        logPageView();
     }
 
     scrollToContact = e => {
@@ -13,6 +29,11 @@ class SmallBusinessOwners extends React.Component{
     render() {
         return (
             <div className="packages-main">
+                <Helmet>
+                    <title>
+                        Small Business Owners
+                    </title>
+                </Helmet>
             <div id="small-business-owners" className="packages-scout">
                 <div className="packages-scout-text">
                     <h2>Small Business Owners</h2>

@@ -1,10 +1,31 @@
 import React from 'react';
 import Footer from "./Footer";
+import {Helmet} from 'react-helmet';
+import ReactGA from 'react-ga';
+
+export const initGA = () => {
+    console.log('GA init')
+    ReactGA.initialize('UA-109461543-1')
+}
+
+export const logPageView = () => {
+    ReactGA.set({page : window.location.pathname})
+    ReactGA.pageview(window.location.pathname)
+}
 
 class PrivacyPolicy extends React.Component {
+    componentDidMount(){
+        initGA();
+        logPageView();
+    }
     render() {
         return (
             <div className="main-container">
+                <Helmet>
+                <title>
+                    Privacy Policy
+                </title>
+                </Helmet>
                 <div className="privacy-policy">
                     <h1>Website Privacy Statement, effective as of May 2018</h1>
                     <div className="policy-section">
