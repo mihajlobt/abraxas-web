@@ -2,23 +2,15 @@ import React from 'react';
 import Footer from "./Footer";
 import ReactGA from 'react-ga';
 import {Helmet} from 'react-helmet';
+import { initAnalytics } from 'react-with-analytics';
+import { trackPage, trackUser, trackEvent } from 'react-with-analytics';
+initAnalytics('UA-109461543-1');
 
-export const initGA = () => {
-    console.log('GA init')
-    ReactGA.initialize('UA-109461543-1')
-}
-
-export const logPageView = () => {
-    ReactGA.set({page : window.location.pathname})
-    ReactGA.pageview(window.location.pathname)
-}
+trackPage('/#/careers');
 
 
 class Careers extends React.Component {
-    componentDidMount(){
-        initGA()
-        logPageView()
-    }
+
     render() {
         return (
             <div className="main-container">

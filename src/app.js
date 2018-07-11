@@ -14,7 +14,7 @@ import Posts from './components/Blog/Posts';
 import Post from './components/Blog/Post';
 
 import {BrowserRouter as Router, Route, Switch, HashRouter} from 'react-router-dom';
-import browserHistory from 'react-router';
+import createHistory from 'history/createBrowserHistory';
 import TermsAndConditions from "./components/TermsAndConditions";
 import PrivacyPolicy from './components/PrivacyPolicy';
 import Pricing from "./components/Pricing";
@@ -28,7 +28,10 @@ import EventPlanners from "./components/EventPlanners";
 import SmartCities from "./components/SmartCities";
 import AdvertisersMediaBuyers from "./components/AdvertisersMediaBuyers";
 import BillboardOwners from "./components/BillboardOwners";
-import SmallBusinessOwners from "./components/SmallBusinessOwners";
+import Retailers from "./components/Retailers";
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-109461543-1');
 
 
 const renderApplication = () => {
@@ -41,11 +44,17 @@ const renderApplication = () => {
         )
     });
 
+    const history = createHistory()
+    history.listen((location,action) => {
+        ReactGA.set({ page: location.pathname });
+        ReactGA.pageview(location.pathname);
+        }
+    );
 
 
 
     ReactDOM.render(
-        <HashRouter>
+        <HashRouter history={history}>
             <div className="main-component-wrapper">
                 <Route path="*" component={Header}/>
                 <Route exact path="/" component={Home}/>
@@ -65,7 +74,7 @@ const renderApplication = () => {
                     <Route path ="/advertisers-media-buyers" component={AdvertisersMediaBuyers} />
                     <Route path ="/billboard-owners" component={BillboardOwners} />
                     <Route path ="/event-planners" component ={EventPlanners} />
-                    <Route path = "/small-business-owners" component={SmallBusinessOwners}/>
+                    <Route path = "/retailers" component={Retailers}/>
                     <Route path ="/smart-cities" component={SmartCities} />
                     {blogRoutesMap}
                 </Switch>

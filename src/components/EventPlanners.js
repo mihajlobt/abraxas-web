@@ -2,25 +2,14 @@ import React from 'react';
 import ReactGA from 'react-ga';
 import {Helmet} from 'react-helmet';
 
-export const initGA = () => {
-    console.log('GA init')
-    ReactGA.initialize('UA-109461543-1')
-}
 
-export const logPageView = () => {
-    ReactGA.set({page : window.location.pathname})
-    ReactGA.pageview(window.location.pathname)
-}
 
 class EventPlanners extends React.Component{
 
     constructor(props){
         super(props);
     }
-    componentDidMount(){
-        initGA();
-        logPageView();
-    }
+
 
     scrollToContact = e => {
         e.preventDefault();

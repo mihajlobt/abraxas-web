@@ -2,24 +2,13 @@ import React from 'react';
 import {Helmet} from 'react-helmet';
 import ReactGA from 'react-ga';
 
-export const initGA = () => {
-    console.log('GA init')
-    ReactGA.initialize('UA-109461543-1')
-}
 
-export const logPageView = () => {
-    ReactGA.set({page : window.location.pathname})
-    ReactGA.pageview(window.location.pathname)
-}
 
-class SmallBusinessOwners extends React.Component{
+class Retailers extends React.Component{
     constructor(props){
         super(props);
     }
-    componentDidMount(){
-        initGA();
-        logPageView();
-    }
+
 
     scrollToContact = e => {
         e.preventDefault();
@@ -31,12 +20,12 @@ class SmallBusinessOwners extends React.Component{
             <div className="packages-main">
                 <Helmet>
                     <title>
-                        Small Business Owners
+                        Retailers
                     </title>
                 </Helmet>
             <div id="small-business-owners" className="packages-scout">
                 <div className="packages-scout-text">
-                    <h2>Small Business Owners</h2>
+                    <h2>Retailers</h2>
 
                     <h3 className="packages-headers" >Our Services</h3>
                     <span>
@@ -78,7 +67,7 @@ class SmallBusinessOwners extends React.Component{
                         </ul>
                     </span>
 
-                    <h3 className="packages-headers">Benefits for Business Owners</h3>
+                    <h3 className="packages-headers">Benefits for Retailers</h3>
                     <span>
                         <ul>
                             <li>
@@ -110,4 +99,4 @@ class SmallBusinessOwners extends React.Component{
     }
 }
 
-export default SmallBusinessOwners;
+export default Retailers;

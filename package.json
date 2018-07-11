@@ -20,6 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "history": "^4.7.2",
+    "material-ui-search-bar": "^0.4.2",
     "react": "^16.2.0",
     "react-document-meta": "^3.0.0-beta.2",
     "react-dom": "^16.2.0",
@@ -29,7 +30,9 @@
     "react-responsive-modal": "^3.0.3",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "react-search-bar": "^2.2.0",
     "react-visibility-sensor": "^3.11.0",
+    "react-with-analytics": "0.0.5",
     "underscore": "^1.9.0"
   },
   "devDependencies": {

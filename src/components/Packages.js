@@ -8,15 +8,6 @@ import smartcities from '../images/SmartCities.jpg';
 import {Helmet} from 'react-helmet';
 import ReactGA from 'react-ga';
 
-export const initGA = () => {
-    console.log('GA init')
-    ReactGA.initialize('UA-109461543-1')
-}
-
-export const logPageView = () => {
-    ReactGA.set({page : window.location.pathname})
-    ReactGA.pageview(window.location.pathname)
-}
 
 
 class Packages extends React.Component{
@@ -25,10 +16,7 @@ class Packages extends React.Component{
         super(props);
     }
 
-    componentDidMount(){
-        initGA();
-        logPageView();
-    }
+
 
     scrollToAdvertisers = e => {
         e.preventDefault();
@@ -48,10 +36,10 @@ class Packages extends React.Component{
         this.props.history.replace("/event-planners");
     };
 
-    scrollToSmallBusinessOwners = e => {
+    scrollToRetailers = e => {
         e.preventDefault();
         window.scrollTo(0, 0);
-        this.props.history.replace("/small-business-owners");
+        this.props.history.replace("/retailers");
     };
 
     scrollToSmartCities = e => {
@@ -104,8 +92,8 @@ class Packages extends React.Component{
 
                     <div className="packages-container">
                         <img src={smallbusiness} className="packages-image" />
-                        <div className="overlay-packages" onClick={this.scrollToSmallBusinessOwners}>
-                                <div className="packages-watermark">Small Business Owners</div>
+                        <div className="overlay-packages" onClick={this.scrollToRetailers}>
+                                <div className="packages-watermark">Retailers</div>
                             </div>
                     </div>
 

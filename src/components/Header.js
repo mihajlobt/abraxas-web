@@ -16,7 +16,7 @@ class Header extends React.Component {
                                 {name: "Advertisers/Media Buyers", path: "advertisers-media-buyers"},
                                 {name: "Billboard Owners", path: "billboard-owners"},
                                 {name: "Event Planners", path: "event-planners"},
-                                {name: "Small Business Owners", path: "small-business-owners"},
+                                {name: "Retailers", path: "retailers"},
                                 {name: "Smart Cities", path: "smart-cities"}
                         ]}
                     ]},
@@ -59,7 +59,7 @@ class Header extends React.Component {
 
     scrollToComponent = e => {
         const view = e.target.value;
-        if (view !== "login" && view !== "blog" && view !== "terms" && view !== "technology"  && view!=="careers" && view !== "packages" && view !== "product" && view !== "pricing" && view !== "advertisers-media-buyers" && view!== "billboard-owners" && view!== "event-planners" && view !== "small-business-owners" && view!== "smart-cities") {
+        if (view !== "login" && view !== "blog" && view !== "terms" && view !== "technology"  && view!=="careers" && view !== "packages" && view !== "product" && view !== "pricing" && view !== "advertisers-media-buyers" && view!== "billboard-owners" && view!== "event-planners" && view !== "retailers" && view!== "smart-cities") {
             this.state.componentIntoView = view;
             e.preventDefault();
             this.props.history.replace("/#" + view);
@@ -161,6 +161,7 @@ class Header extends React.Component {
                 <button value={'home'} href={"/home"} onClick={this.scrollToComponent} className="logo-image"></button>
                 <div className="main-menu">
                     {!this.isSmallDisplay() ? menuItems : null}
+
                 </div>
                 {burgerMenu}
                 <div onClick={this.handleMenu}
